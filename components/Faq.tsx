@@ -23,9 +23,9 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
 
 
-  const toggleFAQ = (index: string) => {
+  const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
-  };
+};
 
 
   return (
@@ -62,4 +62,5 @@ export default function FAQ() {
     </div>
   );
 }
+
 
