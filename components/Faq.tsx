@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 
-
 const faqData = [
   {
     question: "How long does the server take to deploy?",
@@ -18,15 +17,12 @@ const faqData = [
   },
 ];
 
-
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState(null);
-
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
-};
-
+  };
 
   return (
     <div className="mt-20 max-w-6xl mx-auto my-10 mb-40">
@@ -62,5 +58,3 @@ export default function FAQ() {
     </div>
   );
 }
-
-
