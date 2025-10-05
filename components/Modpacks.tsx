@@ -1,10 +1,39 @@
 'use client';
 import { useState } from 'react';
 
-const HostingComparison = () => {
-  const [selectedPlan, setSelectedPlan] = useState('standard');
+// Define types for our data structures
+interface Plan {
+  ram: number | string;
+  price: number | string;
+  players: string;
+  support: string;
+  ssd: string;
+  backup: string;
+  mods: string;
+  setup: string;
+}
 
-  const hostingProviders = [
+interface HostingProvider {
+  name: string;
+  logo: string;
+  color: string;
+  textColor: string;
+  borderColor: string;
+  plans: {
+    starter: Plan;
+    standard: Plan;
+    advanced: Plan;
+    professional: Plan;
+  };
+}
+
+type PlanType = 'starter' | 'standard' | 'advanced' | 'professional';
+type FeatureKey = keyof Plan;
+
+const HostingComparison = () => {
+  const [selectedPlan, setSelectedPlan] = useState<PlanType>('standard');
+
+  const hostingProviders: HostingProvider[] = [
     {
       name: 'VoxelServers',
       logo: '/logo.png',
@@ -72,14 +101,14 @@ const HostingComparison = () => {
     }
   ];
 
-  const planNames = {
+  const planNames: Record<PlanType, string> = {
     starter: 'Starter',
     standard: 'Standard',
     advanced: 'Advanced',
     professional: 'Professional'
   };
 
-  const features = [
+  const features: Array<{ key: FeatureKey; label: string; unit: string; highlight: boolean }> = [
     { key: 'ram', label: 'RAM', unit: 'GB Plan', highlight: true },
     { key: 'price', label: 'Price', unit: '/mo', highlight: true },
     { key: 'players', label: 'Slots', unit: '', highlight: false },
@@ -90,7 +119,7 @@ const HostingComparison = () => {
     { key: 'setup', label: 'Setup Time', unit: '', highlight: false }
   ];
 
-  const getBestValue = (featureKey) => {
+  const getBestValue = (featureKey: FeatureKey): number | string | null => {
     const values = hostingProviders.map(provider => {
       const value = provider.plans[selectedPlan][featureKey];
       if (typeof value === 'string') return value;
@@ -98,12 +127,12 @@ const HostingComparison = () => {
       return value === '✓' ? 1 : 0;
     });
     
-    if (featureKey === 'price') return Math.min(...values.filter(v => typeof v === 'number'));
-    if (featureKey === 'ram' || featureKey === 'players') return Math.max(...values.filter(v => typeof v === 'number'));
+    if (featureKey === 'price') return Math.min(...values.filter(v => typeof v === 'number') as number[]);
+    if (featureKey === 'ram' || featureKey === 'players') return Math.max(...values.filter(v => typeof v === 'number') as number[]);
     return null;
   };
 
-  const isBestValue = (provider, featureKey) => {
+  const isBestValue = (provider: HostingProvider, featureKey: FeatureKey): boolean => {
     const bestValue = getBestValue(featureKey);
     const value = provider.plans[selectedPlan][featureKey];
     
@@ -137,7 +166,7 @@ const HostingComparison = () => {
                   {hostingProviders.map((provider, index) => (
                     <th key={provider.name} className="p-4 text-center">
                       <div className={`flex flex-col items-center p-4 rounded-lg bg-gradient-to-br ${provider.color}`}>
-                        <div className="text-2xl mb-2"><img src={provider.logo} className="w-10" /></div>
+                        <div className="text-2xl mb-2"><img src={provider.logo} className="w-10" alt={`${provider.name} logo`} /></div>
                         <div className="font-bold text-lg">{provider.name}</div>
                         {index === 0 && (
                           <div className="mt-2 px-3 py-1 bg-yellow-500 text-yellow-900 text-xs font-bold rounded-full">
@@ -198,7 +227,7 @@ const HostingComparison = () => {
                 <div className={`p-4 bg-gradient-to-r ${provider.color} text-white`}>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-3">
-                      <div className="text-2xl"><img src={provider.logo} className="w-10" /></div>
+                      <div className="text-2xl"><img src={provider.logo} className="w-10" alt={`${provider.name} logo`} /></div>
                       <div>
                         <div className="font-bold text-lg">{provider.name}</div>
                         <div className="text-sm opacity-90">{planNames[selectedPlan]} Plan</div>
