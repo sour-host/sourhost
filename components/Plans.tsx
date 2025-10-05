@@ -342,8 +342,6 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
   );
 };
 
-export default LocationSelector;
-
 export default function Hero() {
   const router = useRouter();
   const [isLocationOpen, setIsLocationOpen] = useState(false);
