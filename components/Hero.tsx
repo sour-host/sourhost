@@ -9,14 +9,37 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { CubeIcon, ShieldCheckIcon, PuzzlePieceIcon, ChatBubbleLeftIcon } from '@heroicons/react/24/outline';
 
+// Define types for the LocationSelector props
+interface Location {
+  id: string;
+  name: string;
+  region: string;
+  code: string;
+  endpoint: string;
+}
+
+interface PingResult {
+  success: boolean;
+  ping: number;
+  status: string;
+  simulated?: boolean;
+}
+
+interface LocationSelectorProps {
+  isOpen: boolean;
+  onClose: () => void;
+  onLocationSelect: (locationId: string) => void;
+  selectedPlanName: string;
+}
+
 // Location Selector Component with Ping
-const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName }) => {
-  const [locations, setLocations] = useState([]);
+const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName }: LocationSelectorProps) => {
+  const [locations, setLocations] = useState<Location[]>([]);
   const [loading, setLoading] = useState(false);
-  const [pingResults, setPingResults] = useState({});
+  const [pingResults, setPingResults] = useState<{ [key: string]: PingResult }>({});
 
   // OVH locations with actual ping endpoints
-  const defaultLocations = [
+  const defaultLocations: Location[] = [
     // North America - OVH
     { 
       id: '&options[28]=155', 
@@ -87,7 +110,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
     }
   }, [isOpen]);
 
-  const pingLocation = async (location) => {
+  const pingLocation = async (location: Location): Promise<PingResult> => {
     try {
       const startTime = Date.now();
       const controller = new AbortController();
@@ -130,8 +153,8 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
   };
 
   // Simulate realistic ping times based on OVH datacenter locations
-  const simulateOVHPing = (datacenterCode) => {
-    const basePings = {
+  const simulateOVHPing = (datacenterCode: string): number => {
+    const basePings: { [key: string]: number } = {
       // North America
       'bhs': 25,  // Beauharnois, Canada
       'vin': 35,  // Virginia, USA
@@ -160,7 +183,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
 
   const pingAllLocations = async () => {
     setLoading(true);
-    const results = {};
+    const results: { [key: string]: PingResult } = {};
 
     const pingPromises = defaultLocations.map(async (location) => {
       const result = await pingLocation(location);
@@ -172,7 +195,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
     setLoading(false);
   };
 
-  const getPingColor = (ping) => {
+  const getPingColor = (ping: number): string => {
     if (!ping) return 'text-gray-500';
     if (ping < 30) return 'text-green-400';
     if (ping < 60) return 'text-green-500';
@@ -181,7 +204,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
     return 'text-red-500';
   };
 
-  const getStatusIcon = (locationId) => {
+  const getStatusIcon = (locationId: string): string => {
     const result = pingResults[locationId];
     if (!result) return '🔄';
     
@@ -192,7 +215,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
     }
   };
 
-  const getRegionLocations = (region) => {
+  const getRegionLocations = (region: string): Location[] => {
     return locations.filter(location => location.region === region);
   };
 
@@ -364,7 +387,7 @@ export default function Hero() {
     window.open(redirectUrl, '_blank');
   };
 
-  const getSelectedPlanName = () => {
+  const getSelectedPlanName = (): string => {
     const plan = plans.find(p => p.id === selectedPlan);
     return plan ? plan.name : '';
   };
