@@ -85,6 +85,11 @@ const Header = () => {
     closeAllMenus();
   };
 
+  // Fixed ref callback function
+  const setDropdownRef = (name: string) => (el: HTMLDivElement | null) => {
+    dropdownRefs.current[name] = el;
+  };
+
   return (
     <header className="bg-transparent relative top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -92,14 +97,14 @@ const Header = () => {
           {/* Logo */}
           <div className="relative z-60 flex-shrink-0">
             <Link href="/" className="flex items-center" onClick={closeAllMenus}>
-                <img src="/voxel.png" className="w-50 mb-2" />
+                <img src="/voxel.png" className="w-50 mb-2" alt="VoxelServers Logo" />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <div key={link.name} className="relative" ref={el => dropdownRefs.current[link.name] = el}>
+              <div key={link.name} className="relative" ref={setDropdownRef(link.name)}>
                 {link.dropdown ? (
                   <div className="relative">
                     <button
@@ -144,14 +149,14 @@ const Header = () => {
           {/* Desktop Buttons */}
           <div className="hidden md:flex relative z-60 items-center space-x-4">
             <a href="https://billing.voxelservers.com/login">
-            <button className="cursor-pointer text-white transition-colors duration-200 font-medium px-4 py-2 rounded-lg">
-              Login
-            </button>
+              <button className="cursor-pointer text-white transition-colors duration-200 font-medium px-4 py-2 rounded-lg">
+                Login
+              </button>
             </a>
             <a href="https://billing.voxelservers.com/register.php">
-            <button className="cursor-pointer bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium px-4 py-2 rounded-lg transition-all duration-200 transform shadow-md hover:shadow-lg">
-              Order Now
-            </button>
+              <button className="cursor-pointer bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium px-4 py-2 rounded-lg transition-all duration-200 transform shadow-md hover:shadow-lg">
+                Order Now
+              </button>
             </a>
           </div>
 
@@ -231,18 +236,22 @@ const Header = () => {
             
             {/* Mobile Buttons */}
             <div className="flex flex-col space-y-3 pt-4">
-              <button 
-                className="text-white hover:text-blue-600 transition-colors duration-200 font-medium py-3 px-4 rounded-lg border border-gray-200 hover:border-blue-200 text-center"
-                onClick={closeAllMenus}
-              >
-                Login
-              </button>
-              <button 
-                className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 to-blue-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md text-center"
-                onClick={closeAllMenus}
-              >
-                Order Now
-              </button>
+              <a href="https://billing.voxelservers.com/login">
+                <button 
+                  className="w-full text-white hover:text-blue-600 transition-colors duration-200 font-medium py-3 px-4 rounded-lg border border-gray-200 hover:border-blue-200 text-center"
+                  onClick={closeAllMenus}
+                >
+                  Login
+                </button>
+              </a>
+              <a href="https://billing.voxelservers.com/register.php">
+                <button 
+                  className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 to-blue-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md text-center"
+                  onClick={closeAllMenus}
+                >
+                  Order Now
+                </button>
+              </a>
             </div>
           </nav>
         </div>
