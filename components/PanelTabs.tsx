@@ -10,6 +10,7 @@ interface TabData {
   label: string;
   imageUrl: string;
   alt: string;
+  icon: React.ReactNode; // Add this line
 }
 
 const ImageTabs = () => {
