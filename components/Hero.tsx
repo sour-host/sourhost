@@ -474,7 +474,7 @@ export default function Hero() {
                                             <div className="flex items-center gap-1">
                                                 <img src="/blaze.png" alt="Server 1" className="w-6 h-6" />
                                                 <img src="/breezee.png" alt="Server 2" className="w-6 h-6" />
-                                                <span className="text-gray-400 text-sm">+6</span>
+                                                <span className="text-gray-400 text-sm">+4</span>
                                             </div>
                                         </a>
                                     </div>
