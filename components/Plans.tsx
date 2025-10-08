@@ -440,13 +440,13 @@ export default function Hero() {
       baseUrl: 'https://billing.exphost.net/products/minecraft-basic-tier/base-basic/checkout'
     },
     {
-      id: 'wither',
-      name: 'Wither',
+      id: 'warden',
+      name: 'Warden',
       price: '$48.00',
       ram: '24GB',
       period: '/month',
       players: '500+ Recommended Players',
-      icon: '/wither.png',
+      icon: '/warden.png',
       description: 'Crazy performance, mostly for servers that get large amounts of players.',
       features: [
         '2 CPU Cores',
