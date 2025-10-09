@@ -234,7 +234,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
                 Select Server Location
               </h1>
               <h1 className="text-lg text-gray-400 mt-2">
-                For <span className="text-[#2c4fd6] font-semibold">{selectedPlanName}</span> • Powered by a Ryzen 7 5800X
+                For <span className="text-[#2c4fd6] font-semibold">{selectedPlanName}</span> • Powered by a Ryzen 9 9950X
               </h1>
             </div>
             <button
