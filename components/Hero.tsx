@@ -465,7 +465,7 @@ export default function Hero() {
                   <span className="text-3xl font-bold text-white">{plan.price}</span>
                   <span className="text-gray-400">/month</span>
                 </div>
-                <button onClick={() => handlePlanSelection(plan.id)} className="w-full p-6 bg-[#00b72f]/30 text-[#00b72f]/10 py-3 rounded-lg text-sm hover:bg-[#00b72f] hover:text-white transition-all duration-300 flex items-center justify-center gap-2">Pick Location</button>
+                <button onClick={() => handlePlanSelection(plan.id)} className="w-full p-6 bg-[#00b72f]/30 text-white py-3 rounded-lg text-sm hover:bg-[#00b72f] hover:text-white transition-all duration-300 flex items-center justify-center gap-2">Pick Location</button>
               </div>
               </div>
                                     <div className="mt-4 bg-[#0B1622] rounded-lg p-4 border border-gray-200/5 transition-all duration-300 cursor-pointer">
