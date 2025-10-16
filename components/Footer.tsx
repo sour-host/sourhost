@@ -30,10 +30,10 @@ const Footer = () => {
     services: {
       title: 'Clients',
       links: [
-        { name: 'Help & Guides', href: 'https://billing.voxelservers.com/knowledgebase' },
-        { name: 'Game Panel', href: 'https://panel.voxelservers.com/' },
-        { name: 'Billing Area', href: 'https://billing.voxelservers.com/login' },
-        { name: 'Tickets & Support', href: 'https://billing.voxelservers.com/submitticket.php' },
+        { name: 'Help & Guides', href: 'https://billing.sour.host/knowledgebase' },
+        { name: 'Game Panel', href: 'https://panel.sour.host/' },
+        { name: 'Billing Area', href: 'https://billing.sour.host/login' },
+        { name: 'Tickets & Support', href: 'https://billing.sour.host/submitticket.php' },
       ]
     },
     support: {
@@ -51,7 +51,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: 'https://x.com/voxelserverscom', label: 'Twitter' },
+    { icon: Twitter, href: 'https://x.com/sourhost', label: 'Twitter' },
     { icon: Linkedin, href: '#', label: 'LinkedIn' },
     { icon: Youtube, href: '#', label: 'YouTube' },
   ];
@@ -65,7 +65,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-3">
             <Link href="/" className="flex items-center mb-6">
-              <img src="/voxel.png" className="w-50" />
+              <img src="/sourhost.png" className="w-50" />
             </Link>
             <p className="text-gray-400 mb-2 max-w-md">
               Follow Us On:
@@ -112,7 +112,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-gray-400 text-sm">
-              © {currentYear} VoxelServers, LLC. All rights reserved.
+              © {currentYear} Sour Host. All rights reserved.
             </div>
             
             <div className="flex items-center space-x-2 text-sm text-gray-400">
