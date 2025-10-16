@@ -246,7 +246,7 @@ const Header = () => {
               </a>
               <a href="https://billing.voxelservers.com/register.php">
                 <button 
-                  className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 to-blue-700 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md text-center"
+                  className="w-full bg-gradient-to-r from-[#00b72f] to-[#00b72f] hover:from-[#00b72f]/70 to-[#00b72f]/70 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md text-center"
                   onClick={closeAllMenus}
                 >
                   Order Now
