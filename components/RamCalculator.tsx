@@ -221,7 +221,7 @@ export default function RAMCalculator() {
                       onClick={() => setServerType(type)}
                       className={`p-4 rounded-xl border-2 transition-all duration-200 ${
                         serverType === type
-                          ? 'border-blue-500 bg-blue-500/10 text-white'
+                          ? 'border-[#00b72f] bg-[#00b72f]/10 text-white'
                           : 'border-gray-600 bg-gray-700/50 text-gray-300 hover:border-gray-500 hover:bg-gray-600/50'
                       } ${info.disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
                       disabled={info.disabled}
@@ -241,7 +241,7 @@ export default function RAMCalculator() {
                   <h2 className="text-xl font-semibold text-white">
                     Player Count
                   </h2>
-                  <span className="text-2xl font-bold text-blue-400">
+                  <span className="text-2xl font-bold text-[#00b72f]/75">
                     {playerCount}
                   </span>
                 </div>
@@ -300,7 +300,7 @@ export default function RAMCalculator() {
                       type="checkbox"
                       checked={usingOptimizedMods}
                       onChange={(e) => setUsingOptimizedMods(e.target.checked)}
-                      className="w-5 h-5 text-blue-500 bg-gray-600 border-gray-400 rounded focus:ring-blue-500 focus:ring-2"
+                      className="w-5 h-5 text-[#00b72f] bg-gray-600 border-gray-400 rounded focus:ring-[#00b72f] focus:ring-2"
                     />
                     <span className="text-white font-medium">
                       Click if using performance optimization mods
@@ -354,7 +354,7 @@ export default function RAMCalculator() {
             </div>
 
             {/* Recommended Plan Card */}
-            <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl p-8 text-white mb-6">
+            <div className="bg-gradient-to-br from-[#00b72f] to-[#00b72f] rounded-xl p-8 text-white mb-6">
               <div className="text-center">
                 <h3 className="text-3xl font-bold mb-2">{recommendedPlan.name}</h3>
                 <div className="text-4xl font-bold mb-2">{recommendedPlan.ram}</div>
@@ -362,8 +362,8 @@ export default function RAMCalculator() {
                   {recommendedPlan.price}
                   <span className="text-lg">{recommendedPlan.period}</span>
                 </div>
-                <p className="text-blue-100 mb-4">{recommendedPlan.players}</p>
-                <p className="text-blue-50">{recommendedPlan.description}</p>
+                <p className="text-green-100 mb-4">{recommendedPlan.players}</p>
+                <p className="text-green-50">{recommendedPlan.description}</p>
               </div>
             </div>
 
@@ -375,7 +375,7 @@ export default function RAMCalculator() {
               <ul className="space-y-3">
                 {recommendedPlan.features.map((feature, index) => (
                   <li key={index} className="flex items-center text-gray-300">
-                    <svg className="w-5 h-5 text-blue-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="w-5 h-5 text-[#00b72f] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                     </svg>
                     {feature}
@@ -389,7 +389,7 @@ export default function RAMCalculator() {
               href={recommendedPlan.baseUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full bg-blue-500 hover:bg-blue-600 text-white text-center font-bold py-4 px-6 rounded-xl transition-colors duration-200 text-lg"
+              className="block w-full bg-[#00b72f] hover:bg-[#00b72f] text-white text-center font-bold py-4 px-6 rounded-xl transition-colors duration-200 text-lg"
             >
               Choose {recommendedPlan.name}
             </a>
@@ -398,7 +398,7 @@ export default function RAMCalculator() {
             <div className="text-center mt-4">
               <a
                 href="#plans"
-                className="text-blue-400 hover:text-blue-300 transition-colors"
+                className="text-[#00b72f] hover:text-green-300 transition-colors"
               >
                 View all available plans →
               </a>
