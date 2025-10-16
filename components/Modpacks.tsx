@@ -35,11 +35,11 @@ const HostingComparison = () => {
 
   const hostingProviders: HostingProvider[] = [
     {
-      name: 'VoxelServers',
-      logo: '/logo.png',
+      name: 'Sour Host',
+      logo: '/sour.png',
       color: 'from-gray-900 to-gray-900',
-      textColor: 'text-blue-400',
-      borderColor: 'border-blue-500',
+      textColor: 'text-[#00b72f]',
+      borderColor: 'border-[#00b72f]',
       plans: {
         starter: { ram: 2, price: 5, players: '10', support: '24/7', ssd: 'NVMe', backup: 'Daily', mods: '✓', setup: 'Instant' },
         standard: { ram: 6, price: '$12.00', players: 'Unlimited', support: '24/7', ssd: 'NVMe', backup: 'Daily', mods: '✓', setup: 'Instant' },
