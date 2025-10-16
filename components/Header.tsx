@@ -97,7 +97,7 @@ const Header = () => {
           {/* Logo */}
           <div className="relative z-60 flex-shrink-0">
             <Link href="/" className="flex items-center" onClick={closeAllMenus}>
-                <img src="/sourhost.png" className="w-50 mb-2" alt="VoxelServers Logo" />
+                <img src="/sourhost.png" className="w-50 mb-2" alt="SOURHOST Logo" />
             </Link>
           </div>
 
@@ -148,12 +148,12 @@ const Header = () => {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex relative z-60 items-center space-x-4">
-            <a href="https://billing.voxelservers.com/login">
+            <a href="https://billing.sour.host/login">
               <button className="cursor-pointer text-white transition-colors duration-200 font-medium px-4 py-2 rounded-lg">
                 Login
               </button>
             </a>
-            <a href="https://billing.voxelservers.com/register.php">
+            <a href="https://billing.sour.host/register.php">
               <button className="cursor-pointer bg-gradient-to-r from-[#00b72f] to-[#00b72f] hover:from-[#00b72f]/70 to-[#00b72f]/70 text-white font-medium px-4 py-2 rounded-lg transition-all duration-200 transform shadow-md hover:shadow-lg">
                 Order Now
               </button>
@@ -236,7 +236,7 @@ const Header = () => {
             
             {/* Mobile Buttons */}
             <div className="flex flex-col space-y-3 pt-4">
-              <a href="https://billing.voxelservers.com/login">
+              <a href="https://billing.sour.host/login">
                 <button 
                   className="w-full text-white hover:text-[#00b72f] transition-colors duration-200 font-medium py-3 px-4 rounded-lg border border-gray-200 hover:border-green-200 text-center"
                   onClick={closeAllMenus}
@@ -244,7 +244,7 @@ const Header = () => {
                   Login
                 </button>
               </a>
-              <a href="https://billing.voxelservers.com/register.php">
+              <a href="https://billing.sour.host/register.php">
                 <button 
                   className="w-full bg-gradient-to-r from-[#00b72f] to-[#00b72f] hover:from-[#00b72f]/70 to-[#00b72f]/70 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md text-center"
                   onClick={closeAllMenus}
