@@ -34,7 +34,7 @@ const Header = () => {
         { name: 'See Reviews', href: 'https://www.trustpilot.com/review/sour.host', icon: StarIcon },
       ]
     },
-    { name: 'Cart', href: '/about', icon: InfoIcon },
+    { name: 'Cart', href: 'https://billing.sour.host/cart.php?view', icon: InfoIcon },
   ];
 
   // Close dropdowns when clicking outside
