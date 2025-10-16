@@ -410,26 +410,26 @@ export default function Hero() {
               Play Minecraft in <br/>less than 5 minutes!
             </h1>
             <Link href="#plans">
-            <button className="mt-10 cursor-pointer bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg px-10 py-2 hover:shadow-lg hover:shadow-[#2c4fd6]/20 hover:-translate-y-0.5 transition-all duration-300">
+            <button className="mt-10 cursor-pointer bg-gradient-to-r from-[#00b72f] to-[#00b72f] text-white rounded-lg px-10 py-2 hover:shadow-lg hover:shadow-[#2c4fd6]/20 hover:-translate-y-0.5 transition-all duration-300">
               <div className="text-base sm:text-lg font-semibold">Order Now</div>
               <div className="text-xs opacity-75">and start playing!</div>
             </button>
             </Link>
             <ul className="mt-15 grid grid-cols-2 gap-4 mb-6">
                 <li className="flex items-center gap-3 text-gray-300">
-                    <CubeIcon className="text-blue-500 w-5 h-5" />
+                    <CubeIcon className="text-[#00b72f] w-5 h-5" />
                     <span>Java & Bedrock Edition Servers</span>
                 </li>
                 <li className="flex items-center gap-3 text-gray-300">
-                    <ShieldCheckIcon className="text-blue-500 w-5 h-5" />
+                    <ShieldCheckIcon className="text-[#00b72f] w-5 h-5" />
                     <span>1Tbps+ of DDoS Protection</span>
                 </li>
                 <li className="flex items-center gap-3 text-gray-300">
-                    <PuzzlePieceIcon className="text-blue-500 w-5 h-5" />
+                    <PuzzlePieceIcon className="text-[#00b72f] w-5 h-5" />
                     <span>More than 15,000 Modpacks</span>
                 </li>
                 <li className="flex items-center gap-3 text-gray-300">
-                    <ChatBubbleLeftIcon className="text-blue-500 w-5 h-5" />
+                    <ChatBubbleLeftIcon className="text-[#00b72f] w-5 h-5" />
                     <span>24/7 Technical/Customer Support</span>
                 </li>
             </ul>
@@ -438,7 +438,7 @@ export default function Hero() {
           {plans.map((plan) => (
             <div key={plan.id}>
             <div className="hover:-translate-y-2 transition-all duration-300">
-              <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-t-xl p-6 relative overflow-hidden">
+              <div className="bg-gradient-to-r from-[#00b72f] to-[#00b72f] rounded-t-xl p-6 relative overflow-hidden">
                 <div className="relative z-10">
                   <div className="text-4xl font-bold text-white mb-1">10GB</div>
                   <div className="text-white/90 font-medium">Dedicated RAM</div>
@@ -454,7 +454,7 @@ export default function Hero() {
                 <ul className="grid grid-cols-2 gap-4 mb-6">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-start">
-                    <svg className="h-5 w-5 flex-shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg className="h-5 w-5 flex-shrink-0 text-[#00b72f]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="ml-3 text-gray-400">{feature}</span>
@@ -465,15 +465,15 @@ export default function Hero() {
                   <span className="text-3xl font-bold text-white">{plan.price}</span>
                   <span className="text-gray-400">/month</span>
                 </div>
-                <button onClick={() => handlePlanSelection(plan.id)} className="w-full p-6 bg-blue-500/30 text-blue-300 py-3 rounded-lg text-sm hover:bg-blue-500 hover:text-white transition-all duration-300 flex items-center justify-center gap-2">Pick Location</button>
+                <button onClick={() => handlePlanSelection(plan.id)} className="w-full p-6 bg-[#00b72f]/30 text-[#00b72f]/10 py-3 rounded-lg text-sm hover:bg-[#00b72f] hover:text-white transition-all duration-300 flex items-center justify-center gap-2">Pick Location</button>
               </div>
               </div>
                                     <div className="mt-4 bg-[#0B1622] rounded-lg p-4 border border-gray-200/5 transition-all duration-300 cursor-pointer">
                                         <a href="#plans" className="flex items-center justify-between">
                                             <span className="text-white text-sm">More Server Packages</span>
                                             <div className="flex items-center gap-1">
-                                                <img src="/blaze.png" alt="Server 1" className="w-6 h-6" />
-                                                <img src="/breezee.png" alt="Server 2" className="w-6 h-6" />
+                                                <img src="/skeleton.png" alt="Server 1" className="w-6 h-6" />
+                                                <img src="/creeper.png" alt="Server 2" className="w-6 h-6" />
                                                 <span className="text-gray-400 text-sm">+4</span>
                                             </div>
                                         </a>
