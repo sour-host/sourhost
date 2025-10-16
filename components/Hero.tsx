@@ -358,7 +358,7 @@ export default function Hero() {
       icon: '/slime.png',
       features: [
         '3 CPU Cores',
-        'Ryzen 7950X',
+        'Ryzen 9900X',
         'NVMe SSD',
         '24/7 Support'
       ],
