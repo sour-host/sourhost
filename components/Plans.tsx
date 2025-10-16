@@ -534,7 +534,7 @@ export default function Hero() {
             <div className="flex items-center justify-between mb-4">
               <div>
                 <div className="text-sm text-gray-400">Starting at</div>
-                <div className="text-blue-500 text-2xl font-bold">
+                <div className="text-[#00b72f] text-2xl font-bold">
                   {plan.price}
                   <span className="text-gray-400 text-sm">/mo</span>
                 </div>
