@@ -8,8 +8,8 @@ import './globals.css';
 const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Your Site Name',
-  description: 'Your site description',
+  title: 'SOUR.HOST - You Hit an Error',
+  description: 'SOUR.HOST makes sure every one of our customers get what they want - High-Performance Minecraft Servers at an affordable price.',
 };
 
 export default function RootLayout({
