@@ -234,7 +234,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
                 Select Server Location
               </h1>
               <h1 className="text-lg text-gray-400 mt-2">
-                For <span className="text-[#2c4fd6] font-semibold">{selectedPlanName}</span> • Powered by a Ryzen 9 9900X
+                For <span className="text-[#00b72f] font-semibold">{selectedPlanName}</span> • Powered by a Ryzen 9 9900X
               </h1>
             </div>
             <button
@@ -249,7 +249,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
         {/* Loading State */}
         {loading && (
           <div className="p-8 text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#2c4fd6] mx-auto"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#00b72f] mx-auto"></div>
             <p className="text-gray-400 mt-4 text-lg">Testing server locations worldwide...</p>
           </div>
         )}
@@ -275,7 +275,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
                           <button
                             key={location.id}
                             onClick={() => onLocationSelect(location.id)}
-                            className="w-full text-left p-4 rounded-lg bg-[#070D14] hover:bg-[#2c4fd6]/20 border border-white/5 hover:border-[#2c4fd6]/30 transition-all duration-300 group"
+                            className="w-full text-left p-4 rounded-lg bg-[#070D14] hover:bg-[#00b72f]/20 border border-white/5 hover:border-[#00b72f]/30 transition-all duration-300 group"
                           >
                             <div className="flex items-center justify-between">
                               <div className="flex-1">
@@ -284,7 +284,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
                                     {getStatusIcon(location.id)}
                                   </span>
                                   <div className="text-left">
-                                    <h3 className="font-semibold text-white group-hover:text-[#2c4fd6] transition-colors">
+                                    <h3 className="font-semibold text-white group-hover:text-[#00b72f] transition-colors">
                                       {location.name}
                                     </h3>
                                     <p className="text-sm text-gray-400">
@@ -316,7 +316,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
           <div className="flex items-center justify-between">
             <button
               onClick={pingAllLocations}
-              className="flex items-center space-x-3 text-[#2c4fd6] hover:text-[#2c4fd6]/80 transition-colors px-4 py-2 rounded-lg hover:bg-[#2c4fd6]/10"
+              className="flex items-center space-x-3 text-[#00b72f] hover:text-[#00b72f]/80 transition-colors px-4 py-2 rounded-lg hover:bg-[#00b72f]/10"
             >
               <span className="font-medium">Refresh Ping Tests</span>
             </button>
@@ -525,7 +525,7 @@ export default function Hero() {
             <div className="space-y-4 mb-6">
               {plan.features.map((feature, index) => (
                 <div key={index} className="flex items-center gap-3 text-sm text-gray-400">
-                  <div className="w-2 h-2 bg-[#2c4fd6] rounded-full"></div>
+                  <div className="w-2 h-2 bg-[#00b72f] rounded-full"></div>
                   {feature}
                 </div>
               ))}
