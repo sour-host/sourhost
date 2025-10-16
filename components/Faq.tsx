@@ -12,7 +12,7 @@ const faqData = [
     answer: "Every server comes default with a shared IP and port, but you can purchase a dedicated IP at a cost of $2.50/mo. After purchase, open a support ticket, and we'll allocate it to your server."
   },
   {
-    question: "Can transfer my world to VoxelServers?",
+    question: "Can transfer my world to Sour Host?",
     answer: "Yes! You can easily transfer your server with our server importer feature. Enjoy more power but keep your gameplay and data!"
   },
 ];
@@ -42,7 +42,7 @@ export default function FAQ() {
             >
               <span className="font-bold text-xl">{faq.question}</span>
               <span
-                className={`text-blue-500 transform transition-transform duration-300 text-4xl ${
+                className={`text-[#00b72f] transform transition-transform duration-300 text-4xl ${
                   openIndex === index ? "rotate-45" : "rotate-0"
                 }`}
               >
@@ -58,3 +58,4 @@ export default function FAQ() {
     </div>
   );
 }
+
