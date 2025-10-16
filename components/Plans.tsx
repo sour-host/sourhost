@@ -493,7 +493,7 @@ export default function Hero() {
       
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
         {plans.map((plan) => (
-          <motion.div key={plan.id} className="bg-gray-800 backdrop-blur-xl rounded-xl border border-white/5 p-6 hover:border-blue-500 hover:-translate-y-2 transform transition-all duration-300 group"
+          <motion.div key={plan.id} className="bg-gray-800 backdrop-blur-xl rounded-xl border border-white/5 p-6 hover:border-[#00b72f] hover:-translate-y-2 transform transition-all duration-300 group"
           >
             <div className="flex items-center gap-4 mb-6">
               <img 
@@ -502,14 +502,14 @@ export default function Hero() {
                 className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" 
               />
               <div>
-                <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-blue-500 transition-colors duration-300">
+                <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-[#00b72f] transition-colors duration-300">
                   {plan.name}
                 </h3>
                 <div className="flex items-center gap-1">
-                  <span className="text-2xl font-bold text-white group-hover:text-blue-500 transition-colors duration-300">
+                  <span className="text-2xl font-bold text-white group-hover:text-[#00b72f] transition-colors duration-300">
                     {plan.ram}
                   </span>
-                  <p className="text-sm text-gray-500 pt-2">DDR4 RAM</p>
+                  <p className="text-sm text-gray-500 pt-2">DDR5 RAM</p>
                 </div>
               </div>
             </div>
@@ -541,7 +541,7 @@ export default function Hero() {
               </div>
               <button 
                 onClick={() => handlePlanSelection(plan.id)} 
-                className="cursor-pointer bg-blue-500/30 text-blue-300 px-6 py-3 rounded-lg font-medium hover:bg-blue-500 hover:text-white transition-all duration-300 transform hover:scale-105"
+                className="cursor-pointer bg-[#00b72f]/30 text-[#00b72f] px-6 py-3 rounded-lg font-medium hover:bg-[#00b72f] hover:text-white transition-all duration-300 transform hover:scale-105"
               >
                 Pick Location
               </button>
