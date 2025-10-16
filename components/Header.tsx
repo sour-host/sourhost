@@ -124,10 +124,10 @@ const Header = () => {
                           <Link
                             key={item.name}
                             href={item.href}
-                            className="flex items-center px-4 py-3 text-white hover:text-blue-500 transition-colors duration-200 group"
+                            className="flex items-center px-4 py-3 text-white hover:text-[#00b72f] transition-colors duration-200 group"
                             onClick={() => setOpenDropdown(null)}
                           >
-                            <item.icon className="h-4 w-4 mr-3 text-gray-400 group-hover:text-blue-500" />
+                            <item.icon className="h-4 w-4 mr-3 text-gray-400 group-hover:text-[#00b72f]" />
                             <span className="flex-1">{item.name}</span>
                           </Link>
                         ))}
@@ -154,7 +154,7 @@ const Header = () => {
               </button>
             </a>
             <a href="https://billing.voxelservers.com/register.php">
-              <button className="cursor-pointer bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-medium px-4 py-2 rounded-lg transition-all duration-200 transform shadow-md hover:shadow-lg">
+              <button className="cursor-pointer bg-gradient-to-r from-[#00b72f] to-[#00b72f] hover:from-[#00b72f]/70 to-[#00b72f]/70 text-white font-medium px-4 py-2 rounded-lg transition-all duration-200 transform shadow-md hover:shadow-lg">
                 Order Now
               </button>
             </a>
@@ -193,7 +193,7 @@ const Header = () => {
                     {/* Mobile Dropdown Trigger */}
                     <button
                       onClick={() => toggleDropdown(link.name)}
-                      className="flex items-center justify-between w-full text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium py-3 px-2 rounded-lg hover:bg-gray-50"
+                      className="flex items-center justify-between w-full text-gray-700 hover:text-[#00b72f] transition-colors duration-200 font-medium py-3 px-2 rounded-lg hover:bg-gray-50"
                     >
                       <div className="flex items-center">
                         {link.name}
@@ -212,7 +212,7 @@ const Header = () => {
                           <Link
                             key={item.name}
                             href={item.href}
-                            className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200 py-3 px-3 rounded-lg hover:bg-gray-50"
+                            className="flex items-center text-gray-600 hover:text-[#00b72f] transition-colors duration-200 py-3 px-3 rounded-lg hover:bg-gray-50"
                             onClick={handleDropdownLinkClick}
                           >
                             <item.icon className="h-4 w-4 mr-3 text-gray-400" />
@@ -225,7 +225,7 @@ const Header = () => {
                 ) : (
                   <Link
                     href={link.href}
-                    className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-200 font-medium py-3 px-2 rounded-lg hover:bg-gray-50"
+                    className="flex items-center text-gray-700 hover:text-[#00b72f] transition-colors duration-200 font-medium py-3 px-2 rounded-lg hover:bg-gray-50"
                     onClick={closeAllMenus}
                   >
                     {link.name}
@@ -238,7 +238,7 @@ const Header = () => {
             <div className="flex flex-col space-y-3 pt-4">
               <a href="https://billing.voxelservers.com/login">
                 <button 
-                  className="w-full text-white hover:text-blue-600 transition-colors duration-200 font-medium py-3 px-4 rounded-lg border border-gray-200 hover:border-blue-200 text-center"
+                  className="w-full text-white hover:text-[#00b72f] transition-colors duration-200 font-medium py-3 px-4 rounded-lg border border-gray-200 hover:border-green-200 text-center"
                   onClick={closeAllMenus}
                 >
                   Login
