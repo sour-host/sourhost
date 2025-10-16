@@ -25,13 +25,13 @@ const Header = () => {
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Affiliates', href: '/affiliates', icon: InfoIcon },
-    { name: 'Support', href: 'https://discord.gg/z4NNgArN', icon: InfoIcon },
+    { name: 'Support', href: 'https://discord.gg/sourhost', icon: InfoIcon },
     { 
       name: 'More', 
       href: '/',
       dropdown: [
-        { name: 'Jobs/Careers', href: '/careers', icon: UserIcon },
-        { name: 'See Reviews', href: '#', icon: StarIcon },
+        { name: 'Jobs/Careers', href: '#', icon: UserIcon },
+        { name: 'See Reviews', href: 'https://www.trustpilot.com/review/sour.host', icon: StarIcon },
       ]
     },
     { name: 'Cart', href: '/about', icon: InfoIcon },
@@ -97,7 +97,7 @@ const Header = () => {
           {/* Logo */}
           <div className="relative z-60 flex-shrink-0">
             <Link href="/" className="flex items-center" onClick={closeAllMenus}>
-                <img src="/voxel.png" className="w-50 mb-2" alt="VoxelServers Logo" />
+                <img src="/sourhost.png" className="w-50 mb-2" alt="VoxelServers Logo" />
             </Link>
           </div>
 
