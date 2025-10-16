@@ -447,7 +447,7 @@ export default function Hero() {
               <div className="bg-gray-800 border border-white/5 relative z-10 rounded-b-xl p-6">
                 <div className="flex justify-between items-start mb-6">
                   <h3 className="text-2xl font-bold text-white">Slime</h3>
-                  <span className="px-3 py-1 bg-[#2c4fd6]/10 text-[#00b72f] text-xs font-medium rounded-full">
+                  <span className="px-3 py-1 bg-[#00b72f]/10 text-[#00b72f] text-xs font-medium rounded-full">
                     Most Popular
                   </span>
                 </div>
