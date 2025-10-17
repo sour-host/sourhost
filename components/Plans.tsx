@@ -352,7 +352,7 @@ export default function Hero() {
     {
       id: 'skeleton',
       name: 'Skeleton',
-      price: '$12.00',
+      price: '$10.50',
       ram: '6GB',
       period: '/month',
       players: '20-75 Recommended Players',
@@ -370,14 +370,14 @@ export default function Hero() {
     {
       id: 'creeper',
       name: 'Creeper',
-      price: '$16.00',
+      price: '$14.00',
       ram: '8GB',
       period: '/month',
       players: '75-100 Recommended Players',
       icon: '/creeper.png',
       description: 'Ideal for heavily modded servers and larger communities.',
       features: [
-        '2 CPU Cores',
+        '3 CPU Cores',
         'DDoS Protection',
         'NVMe SSD',
         '24/7 Support'
@@ -388,7 +388,7 @@ export default function Hero() {
     {
       id: 'slime',
       name: 'Slime',
-      price: '$20.00',
+      price: '$17.50',
       ram: '10GB',
       period: '/month',
       players: '100-175 Recommended Players',
@@ -406,14 +406,14 @@ export default function Hero() {
     {
       id: 'blaze',
       name: 'Blaze',
-      price: '$24.00',
+      price: '$21.00',
       ram: '12GB',
       period: '/month',
       players: '175-225 Recommended Players',
       icon: '/blaze.png',
       description: 'Ultimate performance for large networks and modpack servers.',
       features: [
-        '3 CPU Cores',
+        '4 CPU Cores',
         'DDoS Protection',
         'NVMe SSD',
         '24/7 Support'
@@ -424,14 +424,14 @@ export default function Hero() {
     {
       id: 'ghast',
       name: 'Ghast',
-      price: '$32.00',
+      price: '$28.00',
       ram: '16GB',
       period: '/month',
       players: '225-500 Recommended Players',
       icon: '/ghast.png',
       description: 'Over the top performance, mostly for large networks and modded servers.',
       features: [
-        '2 CPU Cores',
+        '4 CPU Cores',
         'DDoS Protection',
         'NVMe SSD',
         '24/7 Support'
@@ -442,14 +442,14 @@ export default function Hero() {
     {
       id: 'warden',
       name: 'Warden',
-      price: '$48.00',
+      price: '$42.00',
       ram: '24GB',
       period: '/month',
       players: '500+ Recommended Players',
       icon: '/warden.png',
       description: 'Crazy performance, mostly for servers that get large amounts of players.',
       features: [
-        '2 CPU Cores',
+        '5 CPU Cores',
         'DDoS Protection',
         'NVMe SSD',
         '24/7 Support'
