@@ -29,7 +29,7 @@ const plans: Plan[] = [
       description: 'The Best Package for vanilla or slightly modded gameplay.',
       features: [
         '2 CPU Cores',
-        'DDoS Protection',
+        'SourGuard - DDoS Protection',
         'NVMe SSD',
         '24/7 Support'
       ],
@@ -47,7 +47,7 @@ const plans: Plan[] = [
       description: 'Ideal for heavily modded servers and larger communities.',
       features: [
         '3 CPU Cores',
-        'DDoS Protection',
+        'SourGuard - DDoS Protection',
         'NVMe SSD',
         '24/7 Support'
       ],
@@ -65,7 +65,7 @@ const plans: Plan[] = [
       description: 'Ideal for medium-sized to large networks and modpack servers.',
       features: [
         '3 CPU Cores',
-        'DDoS Protection',
+        'SourGuard - DDoS Protection',
         'NVMe SSD',
         '24/7 Support'
       ],
@@ -83,7 +83,7 @@ const plans: Plan[] = [
       description: 'Ultimate performance for large networks and modpack servers.',
       features: [
         '4 CPU Cores',
-        'DDoS Protection',
+        'SourGuard - DDoS Protection',
         'NVMe SSD',
         '24/7 Support'
       ],
@@ -101,7 +101,7 @@ const plans: Plan[] = [
       description: 'Over the top performance, mostly for large networks and modded servers.',
       features: [
         '4 CPU Cores',
-        'DDoS Protection',
+        'SourGuard - DDoS Protection',
         'NVMe SSD',
         '24/7 Support'
       ],
@@ -119,7 +119,7 @@ const plans: Plan[] = [
       description: 'Crazy performance, mostly for servers that get large amounts of players.',
       features: [
         '5 CPU Cores',
-        'DDoS Protection',
+        'SourGuard - DDoS Protection',
         'NVMe SSD',
         '24/7 Support'
       ],
