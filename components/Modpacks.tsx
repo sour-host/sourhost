@@ -74,19 +74,6 @@ const HostingComparison = () => {
       }
     },
     {
-      name: 'ExpHost',
-      logo: '/logo-white.png',
-      color: 'from-gray-900 to-gray-900',
-      textColor: 'text-green-400',
-      borderColor: 'border-green-500',
-      plans: {
-        starter: { ram: 2, price: 6.5, players: '12', support: '24/7', ssd: 'NVMe', backup: 'Daily', mods: '✓', setup: 'Instant' },
-        standard: { ram: 6, price: '$14.10', players: 'Unlimited', support: '24/7', ssd: 'NVMe', backup: 'On Request', mods: '✓', setup: 'Instant' },
-        advanced: { ram: 8, price: 24.5, players: '60', support: '24/7', ssd: 'NVMe', backup: 'Daily', mods: '✓', setup: 'Instant' },
-        professional: { ram: 16, price: 42.5, players: '120', support: '24/7', ssd: 'NVMe', backup: 'Daily', mods: '✓', setup: 'Instant' }
-      }
-    },
-    {
       name: 'Wise Hosting',
       logo: '/wisehosting-logo.png',
       color: 'from-gray-900 to-gray-900',
