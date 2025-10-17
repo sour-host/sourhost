@@ -135,96 +135,60 @@ export default function RAMCalculator() {
   const [playerCount, setPlayerCount] = useState(1);
   const [addonCount, setAddonCount] = useState(0);
   const [usingOptimizedMods, setUsingOptimizedMods] = useState(false);
+  const [cloudflareMitigation, setCloudflareMitigation] = useState(false); // ✅ NEW
 
   const calculateRecommendedPlan = (): Plan => {
-    let baseRAM = 2; // Base RAM for vanilla
-    
-    // Adjust base RAM based on server type
+    let baseRAM = 2;
     switch (serverType) {
-      case 'vanilla':
-        baseRAM = 2 + (playerCount / 10);
-        break;
-      case 'optimized':
-        baseRAM = 1.5 + (playerCount / 15);
-        if (usingOptimizedMods) baseRAM += 1;
-        break;
-      case 'modded':
-        baseRAM = 4 + (playerCount / 8) + (addonCount * 0.5);
-        break;
-      case 'bedrock':
-        baseRAM = 1 + (playerCount / 20);
-        break;
+      case 'vanilla': baseRAM = 2 + playerCount / 10; break;
+      case 'optimized': baseRAM = 1.5 + playerCount / 15; if (usingOptimizedMods) baseRAM += 1; break;
+      case 'modded': baseRAM = 4 + playerCount / 8 + addonCount * 0.5; break;
+      case 'bedrock': baseRAM = 1 + playerCount / 20; break;
     }
-
-    // Add RAM for addons if applicable
-    if (serverType !== 'vanilla') {
-      baseRAM += addonCount * 0.3;
-    }
-
+    if (serverType !== 'vanilla') baseRAM += addonCount * 0.3;
     const totalRAM = Math.max(2, Math.ceil(baseRAM));
-
-    // Find the appropriate plan based on calculated RAM
-    if (totalRAM <= 6) return plans[0]; // Skeleton
-    if (totalRAM <= 8) return plans[1]; // Creeper
-    if (totalRAM <= 10) return plans[2]; // Slime
-    if (totalRAM <= 12) return plans[3]; // Blaze
-    if (totalRAM <= 16) return plans[4]; // Ghast
-    return plans[5]; // Wither
+    if (totalRAM <= 6) return plans[0];
+    if (totalRAM <= 8) return plans[1];
+    if (totalRAM <= 10) return plans[2];
+    if (totalRAM <= 12) return plans[3];
+    if (totalRAM <= 16) return plans[4];
+    return plans[5];
   };
 
   const recommendedPlan = calculateRecommendedPlan();
 
   const serverTypeInfo = {
-    vanilla: {
-      description: 'Standard Minecraft server with no modifications',
-      disabled: false
-    },
-    optimized: {
-      description: 'Servers using performance optimization mods like Paper, Purpur, etc.',
-      disabled: false
-    },
-    modded: {
-      description: 'Servers with mods like Forge, Fabric, or modpacks',
-      disabled: false
-    },
-    bedrock: {
-      description: 'Bedrock Edition servers (Windows 10, Mobile, Console)',
-      disabled: false
-    }
+    vanilla: { description: 'Standard Minecraft server with no modifications', disabled: false },
+    optimized: { description: 'Servers using Paper/Purpur/etc.', disabled: false },
+    modded: { description: 'Servers running Forge/Fabric/Modpacks', disabled: false },
+    bedrock: { description: 'Bedrock Edition servers', disabled: false },
   };
 
   return (
     <div className="mt-20 py-8 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">
-            Minecraft Server RAM Calculator
-          </h1>
-          <p className="text-gray-300 text-lg">
-            Find the perfect plan for your Minecraft server based on your needs
-          </p>
+          <h1 className="text-4xl font-bold text-white mb-4">Minecraft Server RAM Calculator</h1>
+          <p className="text-gray-300 text-lg">Find the perfect plan for your Minecraft server based on your needs</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Calculator Section */}
+          {/* LEFT: Calculator */}
           <div className="bg-gray-800 rounded-2xl p-6 shadow-2xl">
             <div className="space-y-8">
-              {/* Server Type Selection */}
+
+              {/* ==== Server type buttons ==== */}
               <div>
-                <h2 className="text-xl font-semibold text-white mb-4">
-                  Server Type
-                </h2>
+                <h2 className="text-xl font-semibold text-white mb-4">Server Type</h2>
                 <div className="grid grid-cols-2 gap-4">
                   {(Object.entries(serverTypeInfo) as [ServerType, any][]).map(([type, info]) => (
                     <button
                       key={type}
                       onClick={() => setServerType(type)}
                       className={`p-4 rounded-xl border-2 transition-all duration-200 ${
-                        serverType === type
-                          ? 'border-[#00b72f] bg-[#00b72f]/10 text-white'
-                          : 'border-gray-600 bg-gray-700/50 text-gray-300 hover:border-gray-500 hover:bg-gray-600/50'
-                      } ${info.disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
-                      disabled={info.disabled}
+                        serverType === type ? 'border-[#00b72f] bg-[#00b72f]/10 text-white' :
+                        'border-gray-600 bg-gray-700/50 text-gray-300 hover:border-gray-500 hover:bg-gray-600/50'
+                      }`}
                     >
                       <div className="text-left">
                         <div className="font-medium capitalize mb-1">{type}</div>
@@ -235,200 +199,119 @@ export default function RAMCalculator() {
                 </div>
               </div>
 
-              {/* Player Count Slider */}
+              {/* ==== Player Slider ==== */}
               <div>
                 <div className="flex justify-between items-center mb-2">
-                  <h2 className="text-xl font-semibold text-white">
-                    Player Count
-                  </h2>
-                  <span className="text-2xl font-bold text-[#00b72f]/75">
-                    {playerCount}
-                  </span>
+                  <h2 className="text-xl font-semibold text-white">Player Count</h2>
+                  <span className="text-2xl font-bold text-[#00b72f]/75">{playerCount}</span>
                 </div>
-                <p className="mb-4">The player count is unlimited, this is just a calculator to ensure you get the right plan.</p>
-                <input
-                  type="range"
-                  min="1"
-                  max="500"
-                  value={playerCount}
+                <input type="range" min="1" max="500" value={playerCount}
                   onChange={(e) => setPlayerCount(parseInt(e.target.value))}
-                  className="w-full h-3 bg-gray-600 rounded-lg appearance-none cursor-pointer slider"
-                />
-                <div className="flex justify-between text-sm text-gray-400 mt-2">
-                  <span>1</span>
-                  <span>250</span>
-                  <span>500</span>
-                </div>
+                  className="w-full h-3 bg-gray-600 rounded-lg appearance-none cursor-pointer slider" />
               </div>
 
-              {/* Addon Counter */}
+              {/* ==== Addons ==== */}
               <div>
-                <h2 className="text-xl font-semibold text-white mb-4">
-                  Server Addons/Plugins
-                </h2>
+                <h2 className="text-xl font-semibold text-white mb-4">Server Addons/Plugins</h2>
                 <div className="flex items-center justify-between bg-gray-700 rounded-xl p-4">
-                  <span className="text-gray-300">
-                    {serverType === 'vanilla' ? 'Not available for Vanilla' : 'Number of addons/plugins'}
-                  </span>
+                  <span className="text-gray-300">{serverType === 'vanilla' ? 'Not available for Vanilla' : 'Number of addons/plugins'}</span>
                   <div className="flex items-center space-x-4">
-                    <button
-                      onClick={() => setAddonCount(Math.max(0, addonCount - 1))}
+                    <button onClick={() => setAddonCount(Math.max(0, addonCount - 1))}
                       disabled={serverType === 'vanilla' || addonCount === 0}
-                      className="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center text-white font-bold text-xl disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-500 transition-colors"
-                    >
-                      -
-                    </button>
-                    <span className="text-2xl font-bold text-white min-w-8 text-center">
-                      {addonCount}
-                    </span>
-                    <button
-                      onClick={() => setAddonCount(addonCount + 1)}
-                      disabled={serverType === 'vanilla'}
-                      className="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center text-white font-bold text-xl disabled:opacity-30 disabled:cursor-not-allowed hover:bg-gray-500 transition-colors"
-                    >
-                      +
-                    </button>
+                      className="w-10 h-10 rounded-full bg-gray-600 text-white font-bold">-</button>
+                    <span className="text-2xl font-bold text-white">{addonCount}</span>
+                    <button onClick={() => setAddonCount(addonCount + 1)} disabled={serverType === 'vanilla'}
+                      className="w-10 h-10 rounded-full bg-gray-600 text-white font-bold">+</button>
                   </div>
                 </div>
               </div>
 
-              {/* Optimized Mods Checkbox */}
+              {/* ==== Optimized Mods ==== */}
               {(serverType === 'optimized' || serverType === 'modded') && (
                 <div className="bg-gray-700 rounded-xl p-4">
                   <label className="flex items-center space-x-3 cursor-pointer">
-                    <input
-                      type="checkbox"
-                      checked={usingOptimizedMods}
+                    <input type="checkbox" checked={usingOptimizedMods}
                       onChange={(e) => setUsingOptimizedMods(e.target.checked)}
-                      className="w-5 h-5 text-[#00b72f] bg-gray-600 border-gray-400 rounded focus:ring-[#00b72f] focus:ring-2"
-                    />
-                    <span className="text-white font-medium">
-                      Click if using performance optimization mods
-                    </span>
+                      className="w-5 h-5 text-[#00b72f]" />
+                    <span className="text-white font-medium">Using performance optimization mods</span>
                   </label>
                 </div>
               )}
 
-              {/* Current Configuration Summary */}
-              <div className="bg-gray-700 rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-white mb-3">
-                  Your Configuration
-                </h3>
-                <div className="space-y-2 text-gray-300">
-                  <div className="flex justify-between">
-                    <span>Server Type:</span>
-                    <span className="font-medium capitalize">{serverType}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Player Count:</span>
-                    <span className="font-medium">{playerCount}</span>
-                  </div>
-                  {serverType !== 'vanilla' && (
-                    <div className="flex justify-between">
-                      <span>Addons/Plugins:</span>
-                      <span className="font-medium">{addonCount}</span>
-                    </div>
-                  )}
-                  {(serverType === 'optimized' || serverType === 'modded') && (
-                    <div className="flex justify-between">
-                      <span>Optimized Mods:</span>
-                      <span className="font-medium">
-                        {usingOptimizedMods ? 'Yes' : 'No'}
-                      </span>
-                    </div>
-                  )}
-                </div>
+              {/* ==== Cloudflare Add-on ==== */}
+              <div className="bg-gray-700 rounded-xl p-4">
+                <label className="flex items-center space-x-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={cloudflareMitigation}
+                    onChange={(e) => setCloudflareMitigation(e.target.checked)}
+                    className="w-5 h-5 text-[#00b72f]"
+                  />
+                  <span className="text-white font-medium">Cloudflare DDoS Mitigation (+$25/mo)</span>
+                </label>
               </div>
+
             </div>
           </div>
 
-          {/* Recommended Plan Section */}
+          {/* RIGHT: Recommended Plan */}
           <div className="bg-gray-800 rounded-2xl p-6 shadow-2xl">
             <div className="text-center mb-6">
-              <h2 className="text-2xl font-bold text-white mb-2">
-                Recommended Plan
-              </h2>
-              <p className="text-gray-300">
-                Based on your server configuration
-              </p>
+              <h2 className="text-2xl font-bold text-white mb-2">Recommended Plan</h2>
             </div>
 
-            {/* Recommended Plan Card */}
+            {/* === Plan box === */}
             <div className="bg-gradient-to-br from-[#00b72f] to-[#00b72f] rounded-xl p-8 text-white mb-6">
-              <div className="text-center">
-                <h3 className="text-3xl font-bold mb-2">{recommendedPlan.name}</h3>
-                <div className="text-4xl font-bold mb-2">{recommendedPlan.ram}</div>
+              <h3 className="text-3xl font-bold mb-2">{recommendedPlan.name}</h3>
+              <div className="text-4xl font-bold mb-2">{recommendedPlan.ram}</div>
+
+              {/* ===== PRICE SECTION WITH BREAKDOWN ===== */}
+              {!cloudflareMitigation ? (
                 <div className="text-2xl font-semibold mb-4">
-                  {recommendedPlan.price}
-                  <span className="text-lg">{recommendedPlan.period}</span>
+                  {recommendedPlan.price}<span className="text-lg">{recommendedPlan.period}</span>
                 </div>
-                <p className="text-green-100 mb-4">{recommendedPlan.players}</p>
-                <p className="text-green-50">{recommendedPlan.description}</p>
-              </div>
+              ) : (
+                <div className="bg-white/15 rounded-lg p-4 text-left space-y-2 mb-4">
+                  <div className="flex justify-between"><span>Base Plan</span><span>{recommendedPlan.price}</span></div>
+                  <div className="flex justify-between"><span>Cloudflare Mitigation</span><span>+$25.00</span></div>
+                  <hr className="border-white/30" />
+                  <div className="flex justify-between font-bold text-xl">
+                    <span>Total</span>
+                    <span>
+                      {(() => {
+                        const base = parseFloat(recommendedPlan.price.replace('$',''));
+                        return `$${(base + 25).toFixed(2)}`;
+                      })()}
+                      <span className="text-lg">/month</span>
+                    </span>
+                  </div>
+                </div>
+              )}
+
+              <p className="text-green-100 mb-4">{recommendedPlan.players}</p>
+              <p className="text-green-50">{recommendedPlan.description}</p>
             </div>
 
-            {/* Plan Features */}
+            {/* === Features === */}
             <div className="bg-gray-700 rounded-xl p-6 mb-6">
-              <h3 className="text-lg font-semibold text-white mb-4">
-                Features Included
-              </h3>
               <ul className="space-y-3">
-                {recommendedPlan.features.map((feature, index) => (
-                  <li key={index} className="flex items-center text-gray-300">
-                    <svg className="w-5 h-5 text-[#00b72f] mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                {recommendedPlan.features.map((f, i) => (
+                  <li key={i} className="flex items-center text-gray-300">
+                    <svg className="w-5 h-5 text-[#00b72f] mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    {feature}
+                    {f}
                   </li>
                 ))}
               </ul>
             </div>
 
-            {/* CTA Button */}
-            <a
-              href={recommendedPlan.baseUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full bg-[#00b72f] hover:bg-[#00b72f] text-white text-center font-bold py-4 px-6 rounded-xl transition-colors duration-200 text-lg"
-            >
+            <a href={recommendedPlan.baseUrl} target="_blank" className="block w-full bg-[#00b72f] text-white py-4 rounded-xl text-lg font-bold">
               Choose {recommendedPlan.name}
             </a>
-
-            {/* All Plans Link */}
-            <div className="text-center mt-4">
-              <a
-                href="#plans"
-                className="text-[#00b72f] hover:text-green-300 transition-colors"
-              >
-                View all available plans →
-              </a>
-            </div>
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        .slider::-webkit-slider-thumb {
-          appearance: none;
-          height: 20px;
-          width: 20px;
-          border-radius: 50%;
-          background: #1761fd;
-          cursor: pointer;
-          border: 2px solid #ffffff;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        .slider::-moz-range-thumb {
-          height: 20px;
-          width: 20px;
-          border-radius: 50%;
-          background: #1761fd;
-          cursor: pointer;
-          border: 2px solid #ffffff;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-      `}</style>
     </div>
   );
 }
