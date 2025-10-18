@@ -365,7 +365,7 @@ export default function Hero() {
         '24/7 Support'
       ],
       cta: 'Choose Base',
-      baseUrl: 'https://billing.exphost.net/products/minecraft-basic-tier/base-basic/checkout'
+      baseUrl: 'https://portal.sour.host/store/view/3'
     },
     {
       id: 'creeper',
@@ -383,7 +383,7 @@ export default function Hero() {
         '24/7 Support'
       ],
       cta: 'Choose Base',
-      baseUrl: 'https://billing.exphost.net/products/minecraft-basic-tier/base-basic/checkout'
+      baseUrl: 'https://portal.sour.host/store/view/5'
     },
     {
       id: 'slime',
@@ -401,7 +401,7 @@ export default function Hero() {
         '24/7 Support'
       ],
       cta: 'Choose Base',
-      baseUrl: 'https://billing.exphost.net/products/minecraft-basic-tier/base-basic/checkout'
+      baseUrl: 'https://portal.sour.host/store/view/6'
     },
     {
       id: 'blaze',
@@ -419,7 +419,7 @@ export default function Hero() {
         '24/7 Support'
       ],
       cta: 'Choose Base',
-      baseUrl: 'https://billing.exphost.net/products/minecraft-basic-tier/base-basic/checkout'
+      baseUrl: 'https://portal.sour.host/store/view/7'
     },
     {
       id: 'ghast',
@@ -437,7 +437,7 @@ export default function Hero() {
         '24/7 Support'
       ],
       cta: 'Choose Base',
-      baseUrl: 'https://billing.exphost.net/products/minecraft-basic-tier/base-basic/checkout'
+      baseUrl: 'https://portal.sour.host/store/view/8'
     },
     {
       id: 'warden',
@@ -455,7 +455,7 @@ export default function Hero() {
         '24/7 Support'
       ],
       cta: 'Choose Base',
-      baseUrl: 'https://billing.exphost.net/products/minecraft-basic-tier/base-basic/checkout'
+      baseUrl: 'https://portal.sour.host/store/view/9'
     },
   ];
 
@@ -539,12 +539,11 @@ export default function Hero() {
                   <span className="text-gray-400 text-sm">/mo</span>
                 </div>
               </div>
-              <button 
-                onClick={() => handlePlanSelection(plan.id)} 
-                className="cursor-pointer bg-[#00b72f]/30 text-[#00b72f] px-6 py-3 rounded-lg font-medium hover:bg-[#00b72f] hover:text-white transition-all duration-300 transform hover:scale-105"
-              >
+              <a href={plan.baseURL}>
+              <button className="cursor-pointer bg-[#00b72f]/30 text-[#00b72f] px-6 py-3 rounded-lg font-medium hover:bg-[#00b72f] hover:text-white transition-all duration-300 transform hover:scale-105">
                 Pick Location
               </button>
+              </a>
             </div>
           </motion.div>
         ))}
