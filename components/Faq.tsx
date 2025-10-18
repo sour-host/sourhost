@@ -27,7 +27,7 @@ export default function FAQ() {
   return (
     <div className="mt-20 max-w-6xl mx-auto my-10 mb-40">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-2">Frequently Asked Questions</h1>
+          <h1 className="text-white text-4xl font-bold mb-2">Frequently Asked Questions</h1>
           <p className="text-gray-300">Find the answer to all the questions we most commonly get.</p>
         </div>
       <div className="space-y-4">
@@ -58,4 +58,5 @@ export default function FAQ() {
     </div>
   );
 }
+
 
