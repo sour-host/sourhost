@@ -52,7 +52,7 @@ const ImageTabs = () => {
   return (
     <div className="pt-20 w-full max-w-7xl mx-auto p-8">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-2">Meet the Ultimate Game Panel</h1>
+          <h1 className="text-white text-4xl font-bold mb-2">Meet the Ultimate Game Panel</h1>
           <p className="text-gray-300">Manage, edit and control everything about your Minecraft server from one spot, easily!</p>
         </div>
       {/* Main container with radial gradient background and border */}
