@@ -487,7 +487,7 @@ export default function Hero() {
   return (
     <section id="plans" className="relative pt-20 lg:mt-0 lg:mx-0">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-2">Pick Your Minecraft Plan</h1>
+          <h1 className="text-white text-4xl font-bold mb-2">Pick Your Minecraft Plan</h1>
           <p className="text-gray-300">Find a server plan that's just right for you</p>
         </div>
       
