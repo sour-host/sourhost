@@ -539,7 +539,7 @@ export default function Hero() {
                   <span className="text-gray-400 text-sm">/mo</span>
                 </div>
               </div>
-              <a href={plan.baseURL}>
+              <a href={plan.baseUrl}>
               <button className="cursor-pointer bg-[#00b72f]/30 text-[#00b72f] px-6 py-3 rounded-lg font-medium hover:bg-[#00b72f] hover:text-white transition-all duration-300 transform hover:scale-105">
                 Pick Location
               </button>
