@@ -403,16 +403,13 @@ export default function Hero() {
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 w-full justify-between">
           <div className="md:col-span-2 space-y-6 sm:space-y-8 text-center lg:text-left w-full max-w-4xl">
-            <div className="inline-flex items-center bg-[#0B1622] rounded-full px-4 py-2 w-fit mx-auto lg:mx-0">
-              <span className="text-white text-xs sm:text-sm">🏆 Best Minecraft Hosting Provider</span>
-            </div>
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-extratight hero-heading">
-              Play Minecraft in <br/>less than 5 minutes!
+              The Last Minecraft <br/>Host You'll Ever Need!
             </h1>
+            <img src="/trustpilot.png" className="w-100" />
             <Link href="#plans">
             <button className="mt-10 cursor-pointer bg-gradient-to-r from-[#00b72f] to-[#00b72f] text-white rounded-lg px-10 py-2 hover:shadow-lg hover:shadow-[#2c4fd6]/20 hover:-translate-y-0.5 transition-all duration-300">
               <div className="text-base sm:text-lg font-semibold">Order Now</div>
-              <div className="text-xs opacity-75">and start playing!</div>
             </button>
             </Link>
             <ul className="mt-15 grid grid-cols-2 gap-4 mb-6">
@@ -434,52 +431,7 @@ export default function Hero() {
                 </li>
             </ul>
           </div>
-
-          {plans.map((plan) => (
-            <div key={plan.id}>
-            <div className="hover:-translate-y-2 transition-all duration-300">
-              <div className="bg-gradient-to-r from-[#00b72f] to-[#00b72f] rounded-t-xl p-6 relative overflow-hidden">
-                <div className="relative z-10">
-                  <div className="text-4xl font-bold text-white mb-1">10GB</div>
-                  <div className="text-white/90 font-medium">Dedicated RAM</div>
-                </div>
-              </div>
-              <div className="bg-gray-800 border border-white/5 relative z-10 rounded-b-xl p-6">
-                <div className="flex justify-between items-start mb-6">
-                  <h3 className="text-2xl font-bold text-white">Slime</h3>
-                  <span className="px-3 py-1 bg-[#00b72f]/10 text-[#00b72f] text-xs font-medium rounded-full">
-                    Most Popular
-                  </span>
-                </div>
-                <ul className="grid grid-cols-2 gap-4 mb-6">
-                {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start">
-                    <svg className="h-5 w-5 flex-shrink-0 text-[#00b72f]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <span className="ml-3 text-gray-400">{feature}</span>
-                  </li>
-                ))}
-                </ul>
-                <div className="flex items-end gap-1 mb-6">
-                  <span className="text-3xl font-bold text-white">{plan.price}</span>
-                  <span className="text-gray-400">/month</span>
-                </div>
-                <button onClick={() => handlePlanSelection(plan.id)} className="w-full p-6 bg-[#00b72f]/30 text-white py-3 rounded-lg text-sm hover:bg-[#00b72f] hover:text-white transition-all duration-300 flex items-center justify-center gap-2">Pick Location</button>
-              </div>
-              </div>
-                                    <div className="mt-4 bg-[#0B1622] rounded-lg p-4 border border-gray-200/5 transition-all duration-300 cursor-pointer">
-                                        <a href="#plans" className="flex items-center justify-between">
-                                            <span className="text-white text-sm">More Server Packages</span>
-                                            <div className="flex items-center gap-1">
-                                                <img src="/skeleton.png" alt="Server 1" className="w-6 h-6" />
-                                                <img src="/creeper.png" alt="Server 2" className="w-6 h-6" />
-                                                <span className="text-gray-400 text-sm">+4</span>
-                                            </div>
-                                        </a>
-                                    </div>
-            </div>
-          ))}
+          <img src="/mcimage.png" />
         </div>
       </div>
       <LocationSelector
