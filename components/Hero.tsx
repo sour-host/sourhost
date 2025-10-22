@@ -416,24 +416,6 @@ export default function Hero() {
               <div className="text-base sm:text-lg font-semibold">Order Now</div>
             </button>
             </Link>
-            <ul className="mt-15 grid grid-cols-2 gap-4 mb-6">
-                <li className="flex items-center gap-3 text-gray-300">
-                    <CubeIcon className="text-[#00b72f] w-5 h-5" />
-                    <span>Java & Bedrock Edition Servers</span>
-                </li>
-                <li className="flex items-center gap-3 text-gray-300">
-                    <ShieldCheckIcon className="text-[#00b72f] w-5 h-5" />
-                    <span>1Tbps+ of DDoS Protection</span>
-                </li>
-                <li className="flex items-center gap-3 text-gray-300">
-                    <PuzzlePieceIcon className="text-[#00b72f] w-5 h-5" />
-                    <span>More than 15,000 Modpacks</span>
-                </li>
-                <li className="flex items-center gap-3 text-gray-300">
-                    <ChatBubbleLeftIcon className="text-[#00b72f] w-5 h-5" />
-                    <span>24/7 Technical/Customer Support</span>
-                </li>
-            </ul>
           </div>
           <img src="/mcimage.png" />
         </div>
