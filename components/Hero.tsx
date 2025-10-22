@@ -400,7 +400,7 @@ export default function Hero() {
       </div>
       
 
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-20">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-20 min-h-[calc(100vh-140px)]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 w-full justify-between">
           <div className="md:col-span-2 space-y-6 sm:space-y-8 text-center lg:text-left w-full max-w-4xl">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-extratight hero-heading">
