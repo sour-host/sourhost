@@ -393,7 +393,7 @@ export default function Hero() {
   };
   
   return (
-    <section className="mt-8 lg:mt-0 lg:mx-0">
+    <section className="mt-8 lg:mt-0 lg:mx-0 min-h-[calc(100vh-140px)]">
     
       <div className="absolute inset-0 opacity-100">
         <div className="absolute inset-0 bg-[url('/hero.png')] bg-center bg-cover [mask-image:linear-gradient(to_bottom,#101828,transparent_70%)]" />
