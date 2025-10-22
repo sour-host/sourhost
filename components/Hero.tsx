@@ -406,8 +406,10 @@ export default function Hero() {
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-extratight hero-heading">
               The Last Minecraft <br/>Host You'll Ever Need!
             </h1>
-            <a href="https://trustpilot.com/review/sour.host">
+            <a className="flex" href="https://trustpilot.com/review/sour.host">
+              <p className="font-bold text-lg">Rated 4.2</p>
               <img src="/trustpilot.png" className="w-50" />
+              <p className="font-bold text-lg">On TrustPilot</p>
             </a>
             <Link href="#plans">
             <button className="mt-10 cursor-pointer bg-gradient-to-r from-[#00b72f] to-[#00b72f] text-white rounded-lg px-10 py-2 hover:shadow-lg hover:shadow-[#2c4fd6]/20 hover:-translate-y-0.5 transition-all duration-300">
