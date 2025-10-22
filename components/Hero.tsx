@@ -412,7 +412,7 @@ export default function Hero() {
               <p className="font-bold text-lg text-white mt-1 ml-2">On TrustPilot</p>
             </a>
             <Link href="#plans">
-            <button className="mt-10 cursor-pointer bg-gradient-to-r from-[#00b72f] to-[#00b72f] text-white rounded-lg px-10 py-2 hover:shadow-lg hover:shadow-[#2c4fd6]/20 hover:-translate-y-0.5 transition-all duration-300">
+            <button className="mt-6 cursor-pointer bg-gradient-to-r from-[#00b72f] to-[#00b72f] text-white rounded-lg px-10 py-2 hover:shadow-lg hover:shadow-[#2c4fd6]/20 hover:-translate-y-0.5 transition-all duration-300">
               <div className="text-base sm:text-lg font-semibold">Order Now</div>
             </button>
             </Link>
