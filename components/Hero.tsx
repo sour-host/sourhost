@@ -407,9 +407,9 @@ export default function Hero() {
               The Last Minecraft <br/>Host You'll Ever Need!
             </h1>
             <a className="flex" href="https://trustpilot.com/review/sour.host">
-              <p className="font-bold text-lg text-white mt-1">Rated 4.2</p>
+              <p className="font-bold text-lg text-white mt-1 mr-2">Rated 4.2</p>
               <img src="/trustpilot.png" className="w-50" />
-              <p className="font-bold text-lg text-white mt-1">On TrustPilot</p>
+              <p className="font-bold text-lg text-white mt-1 ml-2">On TrustPilot</p>
             </a>
             <Link href="#plans">
             <button className="mt-10 cursor-pointer bg-gradient-to-r from-[#00b72f] to-[#00b72f] text-white rounded-lg px-10 py-2 hover:shadow-lg hover:shadow-[#2c4fd6]/20 hover:-translate-y-0.5 transition-all duration-300">
