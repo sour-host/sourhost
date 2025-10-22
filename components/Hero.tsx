@@ -410,7 +410,7 @@ export default function Hero() {
               <img src="/trustpilot.png" className="w-50" />
             </a>
             <Link href="#plans">
-            <button className="cursor-pointer bg-gradient-to-r from-[#00b72f] to-[#00b72f] text-white rounded-lg px-10 py-2 hover:shadow-lg hover:shadow-[#2c4fd6]/20 hover:-translate-y-0.5 transition-all duration-300">
+            <button className="mt-10 cursor-pointer bg-gradient-to-r from-[#00b72f] to-[#00b72f] text-white rounded-lg px-10 py-2 hover:shadow-lg hover:shadow-[#2c4fd6]/20 hover:-translate-y-0.5 transition-all duration-300">
               <div className="text-base sm:text-lg font-semibold">Order Now</div>
             </button>
             </Link>
