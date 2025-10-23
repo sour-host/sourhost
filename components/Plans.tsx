@@ -350,18 +350,19 @@ export default function Hero() {
   // Define your plans (same as before)
   const plans = [
     {
-      id: 'skeleton',
-      name: 'Skeleton',
-      price: '$10.50',
-      ram: '6GB',
+      id: 'unlimited',
+      name: 'Unlimited',
+      price: '$30.00',
+      ram: 'Unmetered DDR4',
       period: '/month',
-      players: '20-75 Recommended Players',
+      players: '50-100 Recommended Players',
       icon: '/skeleton.png',
-      description: 'The Best Package for vanilla or slightly modded gameplay.',
+      description: 'The Best Package for simple modded gameplay.',
       features: [
-        '2 CPU Cores',
-        'DDoS Protection',
-        'NVMe SSD',
+        'Unmetered RAM',
+        'Unmetered CPU Cores',
+        '1Tbps+ DDoS Protection',
+        '100GB NVMe SSD',
         '24/7 Support'
       ],
       cta: 'Choose Base',
@@ -402,60 +403,6 @@ export default function Hero() {
       ],
       cta: 'Choose Base',
       baseUrl: 'https://portal.sour.host/store/view/6'
-    },
-    {
-      id: 'blaze',
-      name: 'Blaze',
-      price: '$21.00',
-      ram: '12GB',
-      period: '/month',
-      players: '175-225 Recommended Players',
-      icon: '/blaze.png',
-      description: 'Ultimate performance for large networks and modpack servers.',
-      features: [
-        '4 CPU Cores',
-        'DDoS Protection',
-        'NVMe SSD',
-        '24/7 Support'
-      ],
-      cta: 'Choose Base',
-      baseUrl: 'https://portal.sour.host/store/view/7'
-    },
-    {
-      id: 'ghast',
-      name: 'Ghast',
-      price: '$28.00',
-      ram: '16GB',
-      period: '/month',
-      players: '225-500 Recommended Players',
-      icon: '/ghast.png',
-      description: 'Over the top performance, mostly for large networks and modded servers.',
-      features: [
-        '4 CPU Cores',
-        'DDoS Protection',
-        'NVMe SSD',
-        '24/7 Support'
-      ],
-      cta: 'Choose Base',
-      baseUrl: 'https://portal.sour.host/store/view/8'
-    },
-    {
-      id: 'warden',
-      name: 'Warden',
-      price: '$42.00',
-      ram: '24GB',
-      period: '/month',
-      players: '500+ Recommended Players',
-      icon: '/warden.png',
-      description: 'Crazy performance, mostly for servers that get large amounts of players.',
-      features: [
-        '5 CPU Cores',
-        'DDoS Protection',
-        'NVMe SSD',
-        '24/7 Support'
-      ],
-      cta: 'Choose Base',
-      baseUrl: 'https://portal.sour.host/store/view/9'
     },
   ];
 
