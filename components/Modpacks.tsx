@@ -42,7 +42,7 @@ const HostingComparison = () => {
       borderColor: 'border-[#00b72f]',
       plans: {
         starter: { ram: 2, price: 5, players: '10', support: '24/7', ssd: 'NVMe', backup: 'Daily', mods: '✓', setup: 'Instant' },
-        standard: { ram: 6, price: '$12.00', players: 'Unlimited', support: '24/7', ssd: 'NVMe', backup: 'Daily', mods: '✓', setup: 'Instant' },
+        standard: { ram: 'Unmetered', price: '$9.99', players: 'Unlimited', support: '24/7', ssd: 'NVMe', backup: '2', mods: '✓', setup: 'Instant' },
         advanced: { ram: 8, price: 20, players: '50', support: '24/7', ssd: 'NVMe', backup: 'Daily', mods: '✓', setup: 'Instant' },
         professional: { ram: 16, price: 35, players: '100', support: '24/7', ssd: 'NVMe', backup: 'Daily', mods: '✓', setup: 'Instant' }
       }
@@ -55,7 +55,7 @@ const HostingComparison = () => {
       borderColor: 'border-orange-500',
       plans: {
         starter: { ram: 2, price: 5.6, players: '10', support: '24/7', ssd: 'SSD', backup: 'Daily', mods: '✓', setup: 'Instant' },
-        standard: { ram: 6, price: '$16.79', players: 'Unlimited', support: '24/7', ssd: 'SSD', backup: 'On Request', mods: '✓', setup: 'Instant' },
+        standard: { ram: '6GB Plan', price: '$16.79', players: 'Unlimited', support: '24/7', ssd: 'SSD', backup: 'On Request', mods: '✓', setup: 'Instant' },
         advanced: { ram: 8, price: 22.4, players: '50', support: '24/7', ssd: 'SSD', backup: 'Daily', mods: '✓', setup: 'Instant' },
         professional: { ram: 16, price: 39.2, players: '100', support: '24/7', ssd: 'SSD', backup: 'Daily', mods: '✓', setup: 'Instant' }
       }
@@ -68,7 +68,7 @@ const HostingComparison = () => {
       borderColor: 'border-purple-500',
       plans: {
         starter: { ram: 2, price: 7.99, players: '8', support: '24/7', ssd: 'SSD', backup: 'Weekly', mods: '✓', setup: 'Instant' },
-        standard: { ram: 6, price: '$29.94', players: 'Unlimited', support: '24/7', ssd: 'SSD', backup: 'On Request', mods: '✓', setup: 'Instant' },
+        standard: { ram: '6GB Plan', price: '$29.94', players: 'Unlimited', support: '24/7', ssd: 'SSD', backup: 'On Request', mods: '✓', setup: 'Instant' },
         advanced: { ram: 8, price: 31.99, players: '40', support: '24/7', ssd: 'SSD', backup: 'Weekly', mods: '✓', setup: 'Instant' },
         professional: { ram: 16, price: 55.99, players: '80', support: '24/7', ssd: 'SSD', backup: 'Weekly', mods: '✓', setup: 'Instant' }
       }
@@ -81,7 +81,7 @@ const HostingComparison = () => {
       borderColor: 'border-indigo-500',
       plans: {
         starter: { ram: 2, price: 6, players: '10', support: 'Business', ssd: 'SSD', backup: 'Daily', mods: '✓', setup: 'Instant' },
-        standard: { ram: 6, price: '$18.99', players: 'Unlimited', support: '24/7', ssd: 'SSD', backup: 'On Request', mods: '✓', setup: 'Instant' },
+        standard: { ram: '6GB Plan', price: '$18.99', players: 'Unlimited', support: '24/7', ssd: 'SSD', backup: 'On Request', mods: '✓', setup: 'Instant' },
         advanced: { ram: 8, price: 24, players: '50', support: 'Business', ssd: 'SSD', backup: 'Daily', mods: '✓', setup: 'Instant' },
         professional: { ram: 16, price: 40, players: '100', support: 'Business', ssd: 'SSD', backup: 'Daily', mods: '✓', setup: 'Instant' }
       }
@@ -96,7 +96,7 @@ const HostingComparison = () => {
   };
 
   const features: Array<{ key: FeatureKey; label: string; unit: string; highlight: boolean }> = [
-    { key: 'ram', label: 'RAM', unit: 'GB Plan', highlight: true },
+    { key: 'ram', label: 'RAM', highlight: true },
     { key: 'price', label: 'Price', unit: '/mo', highlight: true },
     { key: 'players', label: 'Slots', unit: '', highlight: false },
     { key: 'support', label: 'Support', unit: '', highlight: false },
@@ -189,7 +189,7 @@ const HostingComparison = () => {
                             bestValue ? 'text-gray-300' : 'text-gray-300'
                           }`}>
                             <span className="text-lg">
-                              {value}{feature.unit}
+                              {value}
                             </span>
                           </div>
                         </td>
@@ -244,7 +244,7 @@ const HostingComparison = () => {
                         </div>
                         <div className={`text-right ${bestValue ? 'text-green-400 font-bold' : 'text-gray-300'}`}>
                           <div className="flex items-center space-x-2">
-                            <span>{value}{feature.unit}</span>
+                            <span>{value}</span>
                           </div>
                         </div>
                       </div>
