@@ -1,6 +1,6 @@
 // app/page.tsx
 import Hero from '@/components/Hero';
-import PanelTabs from '@/components/PanelTabs';
+import DCMap from '@/components/DCMap';
 import RamCalculator from '@/components/RamCalculator';
 import Plans from '@/components/Plans';
 import Modpacks from '@/components/Modpacks';
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <PanelTabs />
+      <DCMap />
       <Plans />
       <RamCalculator />
       <Modpacks />
