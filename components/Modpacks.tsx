@@ -96,7 +96,7 @@ const HostingComparison = () => {
   };
 
   const features: Array<{ key: FeatureKey; label: string; unit: string; highlight: boolean }> = [
-    { key: 'ram', label: 'RAM', highlight: true },
+    { key: 'ram', label: 'RAM', unit: '', highlight: true },
     { key: 'price', label: 'Price', unit: '/mo', highlight: true },
     { key: 'players', label: 'Slots', unit: '', highlight: false },
     { key: 'support', label: 'Support', unit: '', highlight: false },
