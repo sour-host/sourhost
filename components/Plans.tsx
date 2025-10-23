@@ -385,6 +385,7 @@ export default function Hero() {
         '150GB NVMe SSD',
         'Priority 24/7 Support'
       ],
+      isPopular: true,
       cta: 'Choose Basic',
       baseUrl: 'https://portal.sour.host/store/view/3'
     },
@@ -444,7 +445,7 @@ export default function Hero() {
       
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8 place-items-start">
           {plans.map((plan) => (
-            <motion.div popularPlanId="unmetered-standard" key={plan.id} className={`bg-gray-800 backdrop-blur-xl rounded-xl border border-white/5 p-6 hover:border-[#00b72f] hover:-translate-y-2 transform transition-all duration-300 group
+            <motion.div key={plan.id} className={`bg-gray-800 backdrop-blur-xl rounded-xl border border-white/5 p-6 hover:border-[#00b72f] hover:-translate-y-2 transform transition-all duration-300 group
              ${isPopular ? 'ring-2 ring-offset-2 ring-[#00c224]' : 'ring-gray-800'} border ${isPopular ? 'border-[#00c224]' : 'border-gray-800'}`}
         >
             {isPopular && (
