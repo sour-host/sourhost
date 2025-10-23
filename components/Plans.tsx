@@ -460,7 +460,11 @@ export default function Hero() {
               </div>
             )}
             <div className="flex items-center gap-4 mb-6">
-              <img src={plan.image} />
+              <img 
+                src={plan.icon} 
+                alt={plan.name} 
+                className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" 
+              />
               <div>
                 <h3 className="text-2xl font-bold text-white mb-1 transition-colors duration-300">
                   {plan.name}
