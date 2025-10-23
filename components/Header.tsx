@@ -236,7 +236,7 @@ const Header = () => {
             
             {/* Mobile Buttons */}
             <div className="flex flex-col space-y-3 pt-4">
-              <a href="https://billing.sour.host/login">
+              <a href="https://portal.sour.host/auth/login">
                 <button 
                   className="w-full text-white hover:text-[#00b72f] transition-colors duration-200 font-medium py-3 px-4 rounded-lg border border-gray-200 hover:border-green-200 text-center"
                   onClick={closeAllMenus}
@@ -244,7 +244,7 @@ const Header = () => {
                   Login
                 </button>
               </a>
-              <a href="https://billing.sour.host/register.php">
+              <a href="/#plans">
                 <button 
                   className="w-full bg-gradient-to-r from-[#00b72f] to-[#00b72f] hover:from-[#00b72f]/70 to-[#00b72f]/70 text-white font-medium py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md text-center"
                   onClick={closeAllMenus}
