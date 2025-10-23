@@ -388,7 +388,7 @@ export default function Hero() {
       ],
       isPopular: true,
       cta: 'Choose Basic',
-      baseUrl: 'https://portal.sour.host/store/view/3'
+      baseUrl: 'https://portal.sour.host/store/view/5'
     },
     {
       id: 'unmetered-max',
