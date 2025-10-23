@@ -452,12 +452,6 @@ export default function Hero() {
                 <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-[#00b72f] transition-colors duration-300">
                   {plan.name}
                 </h3>
-                <div className="flex items-center gap-1">
-                  <span className="text-2xl font-bold text-white group-hover:text-[#00b72f] transition-colors duration-300">
-                    {plan.ram}
-                  </span>
-                  <p className="text-sm text-gray-500 pt-2">DDR5 RAM</p>
-                </div>
               </div>
             </div>
             
