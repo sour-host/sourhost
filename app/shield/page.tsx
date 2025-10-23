@@ -18,7 +18,7 @@ export default function SourShieldPage() {
           <h1 className="relative z-10 text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#00b72f] to-green-400">
             Introducing SourShield
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-6">
+          <p className="text-lg md:text-xl text-gray-300 mb-6 pt-2">
             Enterprise-grade DDoS protection tailored <span className="text-green-400 font-semibold">exclusively</span> for Minecraft.
           </p>
           <p className="text-sm text-gray-500">Included free with all Minecraft plans hosted on SOUR.HOST</p>
