@@ -442,7 +442,7 @@ export default function Hero() {
           <p className="text-gray-300">Find a server plan that's just right for you</p>
         </div>
       
-      <div className="max-w-7xl mx-auto flex flex-col gap-6 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto grid grid-col-3 gap-6 px-4 sm:px-6 lg:px-8">
         {plans.map((plan) => (
           <motion.div key={plan.id} className="bg-gray-800 backdrop-blur-xl rounded-xl border border-white/5 p-6 hover:border-[#00b72f] hover:-translate-y-2 transform transition-all duration-300 group"
           >
