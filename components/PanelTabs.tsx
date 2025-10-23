@@ -50,7 +50,7 @@ const ImageTabs = () => {
   const activeTabData = tabData.find(tab => tab.id === activeTab);
 
   return (
-    <div className="pt-20 w-full max-w-7xl mx-auto p-8">
+    <div className="mt-30 w-full max-w-7xl mx-auto p-8">
         <div className="text-center mb-8">
           <h1 className="text-white text-4xl font-bold mb-2">Meet the Ultimate Game Panel</h1>
           <p className="text-gray-300">Manage, edit and control everything about your Minecraft server from one spot, easily!</p>
@@ -60,7 +60,7 @@ const ImageTabs = () => {
         className="border-4 border-gray-800 rounded-4xl p-6 bg-gray-800"
       >
         {/* Tabs navigation */}
-        <div className="md:flex space-x-2 mb-6">
+        <div className="md:flex space-x-2 mb-6 mt">
           {tabData.map((tab) => (
             <button
               key={tab.id}
