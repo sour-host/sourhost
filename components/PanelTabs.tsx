@@ -19,16 +19,16 @@ const ImageTabs = () => {
   const tabData: TabData[] = [
     {
       id: 'tab1',
-      label: 'Console',
-      imageUrl: '/console.png', // Replace with your actual images
-      alt: 'Nature landscape',
+      label: 'Dashboard',
+      imageUrl: '/dashboard.png',
+      alt: 'City skyline',
       icon: <HomeIcon className="w-6 h-6" />,
     },
     {
       id: 'tab2',
-      label: 'Dashboard',
-      imageUrl: '/dashboard.png',
-      alt: 'City skyline',
+      label: 'Console',
+      imageUrl: '/console.png', // Replace with your actual images
+      alt: 'Nature landscape',
       icon: <WindowIcon className="w-6 h-6" />,
     },
     {
