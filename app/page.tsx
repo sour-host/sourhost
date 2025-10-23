@@ -16,9 +16,8 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <PanelTabs />
       <Plans />
-      <RamCalculator />
+      <PanelTabs />
       <Modpacks />
       <Faq />
     </>
