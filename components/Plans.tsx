@@ -385,7 +385,6 @@ export default function Hero() {
         '150GB NVMe SSD',
         'Unlimited Player Slots',
         'Priority 24/7 Support',
-        'Easy-to-Use Panel',
       ],
       isPopular: true,
       cta: 'Choose Basic',
