@@ -15,7 +15,7 @@ export default function SourShieldPage() {
       {/* Hero Section */}
       <section className="text-center px-6 py-24 md:py-32 relative z-10">
         <div className="max-w-4xl mx-auto">
-          <h1 className="relative z-10 text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-[#00b72f] to-green-400">
+          <h1 className="relative z-10 text-4xl md:text-6xl font-bold mb-10 bg-clip-text text-transparent bg-gradient-to-r from-[#00b72f] to-green-400">
             Introducing SourShield
           </h1>
           <p className="text-lg md:text-xl text-gray-300 mb-6 pt-2">
