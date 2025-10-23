@@ -356,7 +356,7 @@ export default function Hero() {
       ram: 'Unmetered DDR4',
       period: '/month',
       players: '10-100 Recommended Players',
-      icon: '/skeleton.png',
+      icon: '/basic.png',
       description: 'The Best Package for simple modded gameplay.',
       features: [
         'Unmetered DDR4 RAM',
@@ -369,13 +369,13 @@ export default function Hero() {
       baseUrl: 'https://portal.sour.host/store/view/3'
     },
     {
-      id: 'unmetered-standard',
-      name: 'Unmetered Standard',
+      id: 'unmetered-pro',
+      name: 'Unmetered Pro',
       price: '$19.99',
       ram: 'Unmetered DDR4',
       period: '/month',
       players: '100-250 Recommended Players',
-      icon: '/skeleton.png',
+      icon: '/pro.png',
       description: 'The Best Package for simple modded gameplay.',
       features: [
         'Unmetered DDR4 RAM',
@@ -391,13 +391,13 @@ export default function Hero() {
       baseUrl: 'https://portal.sour.host/store/view/3'
     },
     {
-      id: 'unmetered-professional',
-      name: 'Unmetered Pro',
+      id: 'unmetered-max',
+      name: 'Unmetered Max',
       price: '$24.99',
       ram: '10GB',
       period: '/month',
       players: '100-175 Recommended Players',
-      icon: '/slime.png',
+      icon: '/max.png',
       description: 'Ideal for medium-sized to large networks and modpack servers.',
       features: [
         'Unmetered DDR4 RAM',
@@ -460,6 +460,7 @@ export default function Hero() {
               </div>
             )}
             <div className="flex items-center gap-4 mb-6">
+              <img src={plan.image} />
               <div>
                 <h3 className="text-2xl font-bold text-white mb-1 transition-colors duration-300">
                   {plan.name}
