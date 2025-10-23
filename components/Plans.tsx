@@ -383,7 +383,9 @@ export default function Hero() {
         '1Tbps+ DDoS Protection',
         '4 Server Backups',
         '150GB NVMe SSD',
-        'Priority 24/7 Support'
+        'Unlimited Player Slots',
+        'Priority 24/7 Support',
+        'Easy-to-Use Panel',
       ],
       isPopular: true,
       cta: 'Choose Basic',
@@ -407,7 +409,7 @@ export default function Hero() {
         'Unlimited Player Slots',
         'Special Discord Role(s)',
         'Priority 24/7 Support',
-        'Easy-to-Use Control Interface',
+        'Easy-to-Use Panel',
       ],
       cta: 'Choose Base',
       baseUrl: 'https://portal.sour.host/store/view/6'
