@@ -30,20 +30,19 @@ const Footer = () => {
     services: {
       title: 'Clients',
       links: [
-        { name: 'Help & Guides', href: 'https://billing.sour.host/knowledgebase' },
+        { name: 'News & Updates', href: 'https://portal.sour.host/news' },
         { name: 'Game Panel', href: 'https://panel.sour.host/' },
-        { name: 'Billing Area', href: 'https://billing.sour.host/login' },
-        { name: 'Tickets & Support', href: 'https://billing.sour.host/submitticket.php' },
+        { name: 'Billing Area', href: 'https://portal.sour.host/auth/login' },
+        { name: 'Tickets & Support', href: 'https://portal.sour.host/tickets/create' },
       ]
     },
     support: {
       title: 'Company',
       links: [
         { name: 'Blog', href: '/help' },
-        { name: 'News', href: '/news' },
         { name: 'Affiliates', href: '/affiliates' },
-        { name: 'Careers', href: '/careers' },
         { name: 'Privacy Policy', href: '/privacy' },
+        { name: 'Service Level Agreement', href: '/sla' },
         { name: 'Terms of Service', href: '/terms' },
       ]
     },
