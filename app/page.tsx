@@ -8,10 +8,11 @@ import Faq from '@/components/Faq';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'SOUR.HOST - The right way to host your server',
-  description: 'SOUR.HOST makes sure every one of our customers get what they want - High-Performance Minecraft Servers at an affordable price.',
-  keywords: 'sour, sour.host, sour hosting, Minecraft hosting, Minecraft server hosting, best Minecraft server hosting, free Minecraft server hosting, cheap Minecraft hosting, lag-free Minecraft hosting, dedicated Minecraft server hosting, hosting para Minecraft, host de Minecraft',
+  title: 'Sour Host - The right way to host your server',
+  description: 'Sour Host makes sure every one of our customers get what they want - High-Performance, Unmetered Minecraft Servers at an affordable price.',
+  keywords: 'sour, sour.host, sourhost, sour host, sour hosting, Minecraft hosting, Minecraft server hosting, best Minecraft server hosting, free Minecraft server hosting, cheap Minecraft hosting, lag-free Minecraft hosting, dedicated Minecraft server hosting, hosting para Minecraft, host de Minecraft',
 };
+
 export default function Home() {
   return (
     <>
