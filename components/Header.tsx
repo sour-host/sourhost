@@ -12,6 +12,7 @@ import {
   MenuIcon,
   XIcon,
   HomeIcon,
+  ShieldIcon,
   InfoIcon,
   PhoneIcon
 } from 'lucide-react';
@@ -31,7 +32,7 @@ const Header = () => {
       href: '/',
       dropdown: [
         { name: 'Jobs/Careers', href: '#', icon: UserIcon },
-        { name: 'See Reviews', href: 'https://www.trustpilot.com/review/sour.host', icon: StarIcon },
+        { name: 'SourShield', href: '/shield', icon: ShieldIcon },
       ]
     },
     { name: 'Cart', href: 'https://billing.sour.host/cart.php?view', icon: InfoIcon },
@@ -127,7 +128,6 @@ const Header = () => {
                             className="flex items-center px-4 py-3 text-white hover:text-[#00b72f] transition-colors duration-200 group"
                             onClick={() => setOpenDropdown(null)}
                           >
-                            <item.icon className="h-4 w-4 mr-3 text-gray-400 group-hover:text-[#00b72f]" />
                             <span className="flex-1">{item.name}</span>
                           </Link>
                         ))}
