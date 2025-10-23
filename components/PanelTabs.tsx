@@ -95,7 +95,6 @@ const ImageTabs = () => {
                 src={activeTabData.imageUrl}
                 alt={activeTabData.alt}
                 fill
-                className="object-cover"
                 priority
               />
             </div>
