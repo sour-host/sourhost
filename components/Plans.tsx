@@ -350,56 +350,60 @@ export default function Hero() {
   // Define your plans (same as before)
   const plans = [
     {
-      id: 'unlimited',
-      name: 'Unlimited',
-      price: '$30.00',
+      id: 'unmetered-basic',
+      name: 'Unmetered Basic',
+      price: '$9.99',
       ram: 'Unmetered DDR4',
       period: '/month',
-      players: '50-100 Recommended Players',
+      players: '10-100 Recommended Players',
       icon: '/skeleton.png',
       description: 'The Best Package for simple modded gameplay.',
       features: [
-        'Unmetered RAM',
-        'Unmetered CPU Cores',
+        'Unmetered DDR4 RAM',
+        '2 Shared Logical Cores',
         '1Tbps+ DDoS Protection',
         '100GB NVMe SSD',
         '24/7 Support'
       ],
-      cta: 'Choose Base',
+      cta: 'Choose Basic',
       baseUrl: 'https://portal.sour.host/store/view/3'
     },
     {
-      id: 'creeper',
-      name: 'Creeper',
-      price: '$14.00',
-      ram: '8GB',
+      id: 'unmetered-standard',
+      name: 'Unmetered Standard',
+      price: '$19.99',
+      ram: 'Unmetered DDR4',
       period: '/month',
-      players: '75-100 Recommended Players',
-      icon: '/creeper.png',
-      description: 'Ideal for heavily modded servers and larger communities.',
+      players: '100-250 Recommended Players',
+      icon: '/skeleton.png',
+      description: 'The Best Package for simple modded gameplay.',
       features: [
-        '3 CPU Cores',
-        'DDoS Protection',
-        'NVMe SSD',
-        '24/7 Support'
+        'Unmetered DDR4 RAM',
+        'Unmetered CPU Cores',
+        '1Tbps+ DDoS Protection',
+        '4 Server Backups',
+        '150GB NVMe SSD',
+        'Priority 24/7 Support'
       ],
-      cta: 'Choose Base',
-      baseUrl: 'https://portal.sour.host/store/view/5'
+      cta: 'Choose Basic',
+      baseUrl: 'https://portal.sour.host/store/view/3'
     },
     {
-      id: 'slime',
-      name: 'Slime',
-      price: '$17.50',
+      id: 'unmetered-professional',
+      name: 'Unmetered Pro',
+      price: '$24.99',
       ram: '10GB',
       period: '/month',
       players: '100-175 Recommended Players',
       icon: '/slime.png',
       description: 'Ideal for medium-sized to large networks and modpack servers.',
       features: [
-        '3 CPU Cores',
-        'DDoS Protection',
-        'NVMe SSD',
-        '24/7 Support'
+        'Unmetered DDR4 RAM',
+        'Unmetered CPU Cores',
+        '1Tbps+ DDoS Protection',
+        '6 Server Backups',
+        '250GB NVMe SSD',
+        'Priority 24/7 Support'
       ],
       cta: 'Choose Base',
       baseUrl: 'https://portal.sour.host/store/view/6'
@@ -438,16 +442,11 @@ export default function Hero() {
           <p className="text-gray-300">Find a server plan that's just right for you</p>
         </div>
       
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto flex flex-col gap-6 px-4 sm:px-6 lg:px-8">
         {plans.map((plan) => (
           <motion.div key={plan.id} className="bg-gray-800 backdrop-blur-xl rounded-xl border border-white/5 p-6 hover:border-[#00b72f] hover:-translate-y-2 transform transition-all duration-300 group"
           >
             <div className="flex items-center gap-4 mb-6">
-              <img 
-                src={plan.icon} 
-                alt={plan.name} 
-                className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" 
-              />
               <div>
                 <h3 className="text-2xl font-bold text-white mb-1 group-hover:text-[#00b72f] transition-colors duration-300">
                   {plan.name}
