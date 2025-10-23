@@ -124,7 +124,7 @@ export default function PricingTable({ popularPlanId }: { popularPlanId?: string
               </div>
 
               <div className="mt-6">
-                <a href={baseUrl}>
+                <a href={p.baseUrl}>
                 <button
                   className={`w-full py-2 rounded-md font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2
                     ${isPopular ? 'bg-yellow-500 text-white hover:bg-yellow-600 focus:ring-yellow-300' : 'bg-slate-900 text-white hover:bg-black focus:ring-slate-300'}`}
