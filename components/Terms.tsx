@@ -52,7 +52,6 @@ export default function TermsPage() {
                 <h2 className="text-lg font-bold text-gray-400 my-4">Game Hosting Services</h2>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Attempting to gain unauthorized access</li>
-                  <li>Circumvention of ram restriction</li>
                   <li>Using leaked/nulled assets within your server</li>
                   <li>Engaging in any unlawful act</li>
                   <li>Excessive use of our resources that negatively impacts our network, reliability, availability, or another customer's performance.</li>
