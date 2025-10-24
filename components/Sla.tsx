@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function TermsPage() {
   return (
     <>
-      <main className="relative z-3 min-h-screen">
+      <main className="relative text-white z-3 min-h-screen">
         <div className="max-w-7xl mx-auto py-26 px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3">
           <div className="p-6 sm:p-8">
