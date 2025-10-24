@@ -359,7 +359,7 @@ export default function Hero() {
       icon: '/basic.png',
       description: 'The Best Package for simple modded gameplay.',
       features: [
-        'Unmetered DDR4 RAM',
+        'Unmetered DDR4 RAM (fair-usage)',
         '2 Shared Logical Cores',
         '1Tbps+ DDoS Protection',
         '100GB NVMe SSD',
@@ -378,8 +378,8 @@ export default function Hero() {
       icon: '/pro.png',
       description: 'The Best Package for simple modded gameplay.',
       features: [
-        'Unmetered DDR4 RAM',
-        'Unmetered CPU Cores',
+        'Unmetered DDR4 RAM (fair-usage)',
+        'Unmetered CPU Cores (fair-usage)',
         '1Tbps+ DDoS Protection',
         '4 Server Backups',
         '150GB NVMe SSD',
@@ -400,8 +400,8 @@ export default function Hero() {
       icon: '/max.png',
       description: 'Ideal for medium-sized to large networks and modpack servers.',
       features: [
-        'Unmetered DDR4 RAM',
-        'Unmetered CPU Cores',
+        'Unmetered DDR4 RAM (fair-usage)',
+        'Unmetered CPU Cores (fair-usage)',
         '1Tbps+ DDoS Protection',
         '6 Server Backups',
         '250GB NVMe SSD',
