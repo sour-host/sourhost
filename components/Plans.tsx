@@ -500,6 +500,8 @@ export default function Hero() {
         ))}
       </div>
 
+      <center><p className="text-white text-md">Abuse of our unmetered policy (excessive use of resources that negatively impacts our network or services) may result in a suspension of your service.</p></center>
+
       {/* OVH Location Selector */}
       <LocationSelector
         isOpen={isLocationOpen}
