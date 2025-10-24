@@ -500,7 +500,7 @@ export default function Hero() {
         ))}
       </div>
 
-      <center><p className="text-white text-md">Abuse of our unmetered policy (excessive use of resources that negatively impacts our network or services) may result in a suspension of your service.</p></center>
+      <center><p className="text-white text-sm mt-6">Abuse of our unmetered policy (excessive use of resources that negatively impacts our network or services)<br/> may result in a temporary suspension of your service.</p></center>
 
       {/* OVH Location Selector */}
       <LocationSelector
