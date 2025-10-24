@@ -39,11 +39,9 @@ const Footer = () => {
     support: {
       title: 'Company',
       links: [
-        { name: 'Blog', href: '/help' },
+        { name: 'Blog', href: 'https://portal.sour.host/news' },
         { name: 'Affiliates', href: '/affiliates' },
-        { name: 'Privacy Policy', href: '/privacy' },
-        { name: 'Service Level Agreement', href: '/sla' },
-        { name: 'Terms of Service', href: '/terms' },
+        { name: 'Legal', href: '/legal' },
       ]
     },
   };
