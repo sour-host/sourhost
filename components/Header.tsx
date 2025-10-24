@@ -35,7 +35,6 @@ const Header = () => {
         { name: 'SourShield', href: '/shield', icon: ShieldIcon },
       ]
     },
-    { name: 'Cart', href: 'https://billing.sour.host/cart.php?view', icon: InfoIcon },
   ];
 
   // Close dropdowns when clicking outside
