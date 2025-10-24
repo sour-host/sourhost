@@ -1,5 +1,5 @@
 // app/page.tsx
-import Terms from '@/components/Terms';
+import Sla from '@/components/Sla';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
