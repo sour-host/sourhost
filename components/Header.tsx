@@ -99,42 +99,12 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <div key={link.name} className="relative" ref={setDropdownRef(link.name)}>
-                {link.dropdown ? (
-                  <div className="relative">
-                    <button
-                      onClick={() => toggleDropdown(link.name)}
-                      className="cursor-pointer flex items-center text-white font-semibold transition-colors duration-200 group"
-                    >
-                      {link.name}
-                      <ChevronDownIcon className={`ml-1 h-4 w-4 transition-transform duration-200 ${
-                        openDropdown === link.name ? 'rotate-180' : ''
-                      }`} />
-                    </button>
-
-                    {/* Desktop Dropdown Menu */}
-                    {openDropdown === link.name && (
-                      <div className="absolute top-full left-0 mt-2 w-56 bg-gray-800 rounded-lg shadow-lg border border-gray-200/20 py-2 z-50 animate-in fade-in-0 zoom-in-95">
-                        {link.dropdown.map((item) => (
-                          <Link
-                            key={item.name}
-                            href={item.href}
-                            className="flex items-center px-4 py-3 text-white font-semibold hover:text-[#00b72f] transition-colors duration-200 group"
-                            onClick={() => setOpenDropdown(null)}
-                          >
-                            <span className="flex-1">{item.name}</span>
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ) : (
-                  <Link
-                    href={link.href}
-                    className="flex items-center text-white transition-colors duration-200 font-semibold"
-                  >
-                    {link.name}
-                  </Link>
-                )}
+                <Link
+                  href={link.href}
+                  className="flex items-center text-white transition-colors duration-200 font-semibold"
+                >
+                  {link.name}
+                </Link>
               </div>
             ))}
           </nav>
