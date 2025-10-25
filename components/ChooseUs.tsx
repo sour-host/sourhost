@@ -52,7 +52,7 @@ export default function WhyChooseUs() {
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-4">Why Sour Host?</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            What features make us easier and just plain out better than the competition.
+            What features make us easier and just better than the competition.
           </p>
         </div>
 
