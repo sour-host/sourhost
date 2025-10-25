@@ -3,6 +3,7 @@ import {
   WrenchScrewdriverIcon,
   ArchiveBoxArrowDownIcon,
   GlobeAltIcon,
+  ClockIcon,
   CpuChipIcon,
   ArrowsPointingOutIcon,
   CurrencyDollarIcon,
