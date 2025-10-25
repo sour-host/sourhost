@@ -25,16 +25,10 @@ const Header = () => {
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Affiliates', href: '/affiliates', icon: InfoIcon },
-    { name: 'Support', href: 'https://discord.gg/sourhost', icon: InfoIcon },
-    { 
-      name: 'More', 
-      href: '/',
-      dropdown: [
-        { name: 'Jobs/Careers', href: '#', icon: UserIcon },
-        { name: 'SourShield', href: '/shield', icon: ShieldIcon },
-      ]
-    },
+    { name: 'Plans', href: '/#plans' },
+    { name: 'Support', href: 'https://portal.sour.host/tickets/create' },
+    { name: 'FAQ', href: '/#faq' },
+    { name: 'SourShield', href: '/shield' },
   ];
 
   // Close dropdowns when clicking outside
