@@ -9,7 +9,6 @@ import {
   ServerStackIcon,
   LifebuoyIcon 
 } from '@heroicons/react/24/outline';
-import { FaGamepad, FaHeadset, FaUserCircle, FaShoppingBag } from 'react-icons/fa';
 import { motion } from "framer-motion";
 
 export default function WhyChooseUs() {
