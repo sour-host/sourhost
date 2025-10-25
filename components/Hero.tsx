@@ -418,7 +418,7 @@ export default function Hero() {
             </button>
             </Link>
           </div>
-          <img src="/minecraft-hero.png" />
+          <img src="/mcimage.png" />
         </div>
       </div>
       <LocationSelector
