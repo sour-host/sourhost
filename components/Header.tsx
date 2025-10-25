@@ -111,12 +111,12 @@ const Header = () => {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex relative z-60 items-center space-x-4">
-            <a href="https://billing.sour.host/login">
+            <a href="https://portal.sour.host/auth/login">
               <button className="cursor-pointer text-white transition-colors duration-200 font-semibold px-4 py-2 rounded-lg">
                 Login
               </button>
             </a>
-            <a href="https://billing.sour.host/register.php">
+            <a href="/#plans">
               <button className="cursor-pointer bg-gradient-to-r from-[#00b72f] to-[#00b72f] hover:from-[#00b72f]/70 to-[#00b72f]/70 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-200 transform shadow-md hover:shadow-lg">
                 Order Now
               </button>
