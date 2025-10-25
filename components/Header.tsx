@@ -151,49 +151,13 @@ const Header = () => {
           <nav className="flex flex-col space-y-2">
             {navLinks.map((link) => (
               <div key={link.name}>
-                {link.dropdown ? (
-                  <div className="pb-2">
-                    {/* Mobile Dropdown Trigger */}
-                    <button
-                      onClick={() => toggleDropdown(link.name)}
-                      className="flex items-center justify-between w-full text-gray-700 hover:text-[#00b72f] transition-colors duration-200 font-semibold py-3 px-2 rounded-lg hover:bg-gray-50"
-                    >
-                      <div className="flex items-center">
-                        {link.name}
-                      </div>
-                      <ChevronDownIcon className={`h-4 w-4 transition-transform duration-200 ${
-                        openDropdown === link.name ? 'rotate-180' : ''
-                      }`} />
-                    </button>
-
-                    {/* Mobile Dropdown Content */}
-                    <div className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                      openDropdown === link.name ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-                    }`}>
-                      <div className="ml-8 mt-2 space-y-1 border-l-2 border-gray-200 pl-4">
-                        {link.dropdown.map((item) => (
-                          <Link
-                            key={item.name}
-                            href={item.href}
-                            className="flex items-center text-gray-600 hover:text-[#00b72f] transition-colors duration-200 py-3 px-3 rounded-lg hover:bg-gray-50"
-                            onClick={handleDropdownLinkClick}
-                          >
-                            <item.icon className="h-4 w-4 mr-3 text-gray-400" />
-                            {item.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                ) : (
-                  <Link
+                <Link
                     href={link.href}
                     className="flex items-center text-gray-700 hover:text-[#00b72f] transition-colors duration-200 font-semibold py-3 px-2 rounded-lg hover:bg-gray-50"
                     onClick={closeAllMenus}
-                  >
+                >
                     {link.name}
-                  </Link>
-                )}
+                </Link>
               </div>
             ))}
             
