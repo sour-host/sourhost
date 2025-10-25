@@ -1,7 +1,7 @@
 // app/page.tsx
 import Hero from '@/components/Hero';
 import PanelTabs from '@/components/PanelTabs';
-import RamCalculator from '@/components/RamCalculator';
+import ChooseUs from '@/components/ChooseUs';
 import Plans from '@/components/Plans';
 import Modpacks from '@/components/Modpacks';
 import Faq from '@/components/Faq';
@@ -18,6 +18,7 @@ export default function Home() {
     <>
       <Hero />
       <Plans />
+      <ChooseUs />
       <PanelTabs />
       <Modpacks />
       <Faq />
