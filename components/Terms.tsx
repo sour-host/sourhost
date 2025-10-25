@@ -26,7 +26,7 @@ export default function TermsPage() {
               <section id="intro">
                 <h2 className="text-2xl font-bold text-gray-400 mb-4">1. Introduction</h2>
                 <p className="mb-4">
-                  The following terms and conditions of service regulates and define the relationship between Sour Host hereby referred to as the ("Hosting")/("Company") and/or ("We") and Clients, customers and or users such as guests. By using our services, you automatically agree to all conditions mentioned within the following agreement, ensure you read and understand this carefully.
+                  The following terms and conditions of service regulates and define the relationship between Sour Host (owned and operated by Spheres Hosting, LLC) hereby referred to as the ("Hosting")/("Company") and/or ("We") and Clients, customers and or users such as guests. By using our services, you automatically agree to all conditions mentioned within the following agreement, ensure you read and understand this carefully.
                 </p>
               </section>
 
