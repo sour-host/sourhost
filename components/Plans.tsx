@@ -390,7 +390,7 @@ export default function Hero() {
       ],
       isPopular: true,
       cta: 'Choose Basic',
-      baseUrl: 'https://portal.sour.host/store/view/5'
+      baseUrl: 'https://portal.sour.host/store/view/7'
     },
     {
       id: 'unmetered-max',
@@ -411,7 +411,7 @@ export default function Hero() {
         'Priority 24/7 Support',
       ],
       cta: 'Choose Base',
-      baseUrl: 'https://portal.sour.host/store/view/6'
+      baseUrl: 'https://portal.sour.host/store/view/8'
     },
   ];
 
