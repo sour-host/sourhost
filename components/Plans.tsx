@@ -363,7 +363,9 @@ export default function Hero() {
         '2 Shared Logical Cores',
         '1Tbps+ DDoS Protection',
         '100GB NVMe SSD',
-        '24/7 Support'
+        '24/7 Support',
+        'Unlimited Player Slots',
+        'Easy-to-Use Control Panel',
       ],
       cta: 'Choose Basic',
       baseUrl: 'https://portal.sour.host/store/view/3'
