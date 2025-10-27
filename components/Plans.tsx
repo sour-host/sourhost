@@ -406,9 +406,7 @@ export default function Hero() {
         '6 Server Backups',
         '250GB NVMe SSD',
         'Unlimited Player Slots',
-        'Special Discord Role(s)',
         'Priority 24/7 Support',
-        'Easy-to-Use Panel',
       ],
       cta: 'Choose Base',
       baseUrl: 'https://portal.sour.host/store/view/6'
