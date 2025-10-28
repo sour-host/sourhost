@@ -357,7 +357,7 @@ export default function Hero() {
       period: '/month',
       players: '10-100 Recommended Players',
       icon: '/basic.png',
-      description: 'The Best Package for simple modded gameplay.',
+      description: 'The best package for simple modded gameplay.',
       features: [
         'Unmetered DDR4 RAM (fair-usage)',
         '2 Shared Logical Cores',
@@ -378,7 +378,7 @@ export default function Hero() {
       period: '/month',
       players: '100-250 Recommended Players',
       icon: '/pro.png',
-      description: 'The Best Package for simple modded gameplay.',
+      description: 'The best package for medium modded gameplay.',
       features: [
         'Unmetered DDR4 RAM (fair-usage)',
         'Unmetered CPU Cores (fair-usage)',
@@ -400,7 +400,7 @@ export default function Hero() {
       period: '/month',
       players: '100-175 Recommended Players',
       icon: '/max.png',
-      description: 'Ideal for medium-sized to large networks and modpack servers.',
+      description: 'Ideal for large networks and modpack servers.',
       features: [
         'Unmetered DDR4 RAM (fair-usage)',
         'Unmetered CPU Cores (fair-usage)',
