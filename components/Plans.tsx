@@ -378,7 +378,7 @@ export default function Hero() {
       period: '/month',
       players: '100-250 Recommended Players',
       icon: '/pro.png',
-      description: 'The best package for medium modded gameplay.',
+      description: 'The best package for modded gameplay.',
       features: [
         'Unmetered DDR4 RAM (fair-usage)',
         'Unmetered CPU Cores (fair-usage)',
