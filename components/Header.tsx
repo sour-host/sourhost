@@ -102,26 +102,13 @@ const Header = () => {
               <a href="/" className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors">
                 HOME
               </a>
-              
-              {/* Services Dropdown */}
-              <div className="relative group">
-                <button className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors flex items-center">
-                  ALL SERVICES
-                </button>
-                <div className="relative left-0 top-0 w-64 bg-[rgba(16,11,34,0.9)] backdrop-blur-lg rounded-3xl opacity-0 invisible group-hover:opacity-100 group-hover:visible pointer-events-none group-hover:pointer-events-auto">
-                  {/* Dropdown content */}
-                  <div className="p-4">
-                    <h6 className="text-white font-semibold text-xs uppercase tracking-wider mb-2">Game Hosting</h6>
-                    <a href="/#plans" className="flex items-center text-[#bebebe] hover:text-white py-2 transition-colors">
-                      <img src="/mcbasic.png" className="w-4 h-4 mr-2" alt="" />
-                      Minecraft Hosting
-                    </a>
-                  </div>
-                </div>
-              </div>
 
-              <a href="https://portal.sour.host/news" className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors">
-                KNOWLEDGEBASE
+              <a href="/#plans" className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors">
+                Minecraft
+              </a>
+
+              <a href="/shield" className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors">
+                SOURSHIELD
               </a>
               
               <a href="https://discord.gg/sourhost" className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors">
