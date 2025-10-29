@@ -108,7 +108,7 @@ const Header = () => {
                 <button className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors flex items-center">
                   ALL SERVICES
                 </button>
-                <div className="absolute left-0 top-0 w-64 bg-[rgba(16,11,34,0.9)] backdrop-blur-lg rounded-3xl opacity-0 invisible group-hover:opacity-100 group-hover:visible pointer-events-none group-hover:pointer-events-auto">
+                <div className="relative left-0 top-0 w-64 bg-[rgba(16,11,34,0.9)] backdrop-blur-lg rounded-3xl opacity-0 invisible group-hover:opacity-100 group-hover:visible pointer-events-none group-hover:pointer-events-auto">
                   {/* Dropdown content */}
                   <div className="p-4">
                     <h6 className="text-white font-semibold text-xs uppercase tracking-wider mb-2">Game Hosting</h6>
