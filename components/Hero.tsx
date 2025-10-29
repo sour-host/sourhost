@@ -394,12 +394,6 @@ export default function Hero() {
   
   return (
     <section className="mt-8 lg:mt-0 lg:mx-0">
-    
-      <div className="absolute inset-0 opacity-100">
-        <div className="absolute inset-0 bg-[url('/hero.png')] bg-center bg-cover [mask-image:linear-gradient(to_bottom,#101828,transparent_70%)]" />
-      </div>
-      
-
       <div className="relative z-10 container mx-auto px-4 sm:px-6 py-40">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 w-full justify-between">
           <div className="md:col-span-2 space-y-6 sm:space-y-8 text-center lg:text-left w-full max-w-4xl">
