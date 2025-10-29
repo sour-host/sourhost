@@ -69,7 +69,7 @@ const ImageTabs = () => {
                 px-6 py-3 font-semibold w-full text-sm rounded-2xl border-2 transition-all duration-300
                 ${activeTab === tab.id 
                   ? 'border-[#00b72f] bg-[#00b72f]/20 text-gray-900 shadow-lg' 
-                  : 'border-gray-300/20 bg-gray-800 text-white hover:bg-gray-700 hover:border-gray-200'
+                  : 'border-gray-300/20 bg-white/15 text-white hover:bg-gray-700 hover:border-gray-200'
                 }
               `}
             >
