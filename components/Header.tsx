@@ -104,7 +104,7 @@ const Header = () => {
               </a>
 
               <a href="/#plans" className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors">
-                Minecraft
+                MINECRAFT
               </a>
 
               <a href="/shield" className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors">
