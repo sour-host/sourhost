@@ -113,7 +113,7 @@ const Header = () => {
                   <div className="p-4">
                     <h6 className="text-white font-semibold text-xs uppercase tracking-wider mb-2">Game Hosting</h6>
                     <a href="/#plans" className="flex items-center text-[#bebebe] hover:text-white py-2 transition-colors">
-                      <img src="/mcjava.png" className="w-4 h-4 mr-2" alt="" />
+                      <img src="/mcbasic.png" className="w-4 h-4 mr-2" alt="" />
                       Minecraft Hosting
                     </a>
                   </div>
