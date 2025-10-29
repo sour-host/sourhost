@@ -143,12 +143,12 @@ const HostingComparison = () => {
         </div>
 
         {/* Comparison Table */}
-        <div className="bg-gray-800 rounded-lg overflow-hidden shadow-xl">
+        <div className="bg-white/10 rounded-lg overflow-hidden shadow-xl">
           {/* Desktop Table */}
           <div className="hidden lg:block">
             <table className="w-full">
               <thead>
-                <tr className="bg-gray-700">
+                <tr className="bg-white/15">
                   <th className="p-4 text-left w-48">Feature</th>
                   {hostingProviders.map((provider, index) => (
                     <th key={provider.name} className="p-4 text-center">
@@ -169,13 +169,13 @@ const HostingComparison = () => {
                 {features.map((feature, featureIndex) => (
                   <tr 
                     key={feature.key} 
-                    className={featureIndex % 2 === 0 ? 'bg-gray-750' : 'bg-gray-800'}
+                    className={featureIndex % 2 === 0 ? 'bg-white/12' : 'bg-white/10'}
                   >
                     <td className="p-4 font-semibold">
                       <div className="flex items-center">
                         {feature.label}
                         {feature.highlight && (
-                          <span className="ml-2 text-xs bg-gray-600 px-2 py-1 rounded">Key Feature</span>
+                          <span className="ml-2 text-xs bg-white/15 px-2 py-1 rounded">Key Feature</span>
                         )}
                       </div>
                     </td>
@@ -233,13 +233,13 @@ const HostingComparison = () => {
                       <div 
                         key={feature.key} 
                         className={`flex justify-between items-center p-3 ${
-                          featureIndex % 2 === 0 ? 'bg-gray-750' : 'bg-gray-800'
+                          featureIndex % 2 === 0 ? 'bg-white/12' : 'bg-white/15'
                         }`}
                       >
                         <div className="flex items-center space-x-2">
                           <span className="font-medium text-gray-300">{feature.label}</span>
                           {feature.highlight && (
-                            <span className="text-xs bg-gray-600 px-2 py-1 rounded text-gray-300">Key</span>
+                            <span className="text-xs bg-white/5 px-2 py-1 rounded text-gray-300">Key</span>
                           )}
                         </div>
                         <div className={`text-right ${bestValue ? 'text-green-400 font-bold' : 'text-gray-300'}`}>
