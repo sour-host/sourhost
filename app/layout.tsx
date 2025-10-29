@@ -1,11 +1,11 @@
 // app/layout.tsx
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import { Oxanium } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import './globals.css';
 
-const montserrat = Montserrat({ subsets: ['latin'] });
+const oxanium = Oxanium({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'SOUR.HOST - You Hit an Error',
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-gray-50`}>
+      <body className={`${oxanium.className} bg-gray-50`}>
         <Header />
         <main className="max-w-7xl mx-auto min-h-[calc(100vh-140px)]">
           {children}
