@@ -108,7 +108,7 @@ const Header = () => {
                 <button className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors flex items-center">
                   ALL SERVICES <i className="fa-solid fa-caret-down ml-1 text-[#00b72f] text-xs relative -top-0.5"></i>
                 </button>
-                <div className="absolute left-0 top-full mt-2 w-64 bg-[rgba(16,11,34,0.9)] backdrop-blur-lg rounded-3xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto">
+                <div className="absolute left-0 top-full w-64 bg-[rgba(16,11,34,0.9)] backdrop-blur-lg rounded-3xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto">
                   {/* Dropdown content */}
                   <div className="p-4">
                     <h6 className="text-white font-semibold text-xs uppercase tracking-wider mb-2">Game Hosting</h6>
@@ -139,7 +139,7 @@ const Header = () => {
             </div>
 
             {/* Mobile Menu Button */}
-            <button className="lg:hidden bg-black/60 text-[#00aeef] p-2 rounded">
+            <button className="lg:hidden bg-black/60 text-[#00b72f] p-2 rounded">
               <i className="fa-solid fa-bars"></i>
             </button>
           </div>
