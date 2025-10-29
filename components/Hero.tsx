@@ -398,7 +398,7 @@ export default function Hero() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 w-full justify-between">
           <div className="md:col-span-2 space-y-6 sm:space-y-8 text-center lg:text-left w-full max-w-4xl">
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-extratight hero-heading">
-              The Last Minecraft <br/>Host You'll Ever Need!
+              THE LAST MINECRAFT <br/>HOST YOU'LL EVER NEED!
             </h1>
             <p className="text-lg text-white font-semibold">With Sour Host, your server will be faster, smoother, and unmetered.</p>
             <a className="flex" href="https://trustpilot.com/review/sour.host">
