@@ -85,7 +85,7 @@ const Header = () => {
   };
 
   return (
-      <header className="fixed top-0 w-full z-50 bg-transparent transition-all duration-300 py-4">
+      <header className="w-full z-50 bg-transparent transition-all duration-300 py-4">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
@@ -112,19 +112,19 @@ const Header = () => {
                   {/* Dropdown content */}
                   <div className="p-4">
                     <h6 className="text-white font-semibold text-xs uppercase tracking-wider mb-2">Game Hosting</h6>
-                    <a href="/" className="flex items-center text-[#bebebe] hover:text-white py-2 transition-colors">
-                      <img src="https://mintservers.com/assets/games/icons/mcjava.png" className="w-4 h-4 mr-2" alt="" />
+                    <a href="/#plans" className="flex items-center text-[#bebebe] hover:text-white py-2 transition-colors">
+                      <img src="/mcjava.png" className="w-4 h-4 mr-2" alt="" />
                       Minecraft Hosting
                     </a>
                   </div>
                 </div>
               </div>
 
-              <a href="/knowledgebase" className="text-white font-bold text-sm hover:text-[#00aeef] transform scale-x-[1.15] transition-colors">
+              <a href="https://portal.sour.host/news" className="text-white font-bold text-sm hover:text-[#00aeef] transform scale-x-[1.15] transition-colors">
                 KNOWLEDGEBASE
               </a>
               
-              <a href="/support" className="text-white font-bold text-sm hover:text-[#00aeef] transform scale-x-[1.15] transition-colors">
+              <a href="https://discord.gg/sourhost" className="text-white font-bold text-sm hover:text-[#00aeef] transform scale-x-[1.15] transition-colors">
                 CONTACT US
               </a>
             </nav>
@@ -132,7 +132,6 @@ const Header = () => {
             {/* User Section */}
             <div className="hidden lg:flex items-center space-x-3">
               <button className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg font-bold transition-colors">
-                <i className="fa-solid fa-sliders mr-2"></i>
                 Dashboard
               </button>
             </div>
