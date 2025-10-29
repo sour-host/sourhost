@@ -34,7 +34,7 @@ export default function FAQ() {
         {faqData.map((faq, index) => (
           <div
             key={index}
-            className="max-w-4xl mx-auto text-white rounded-lg p-4 bg-gray-800 transition"
+            className="max-w-4xl mx-auto text-white rounded-lg p-4 bg-white/10 transition"
           >
             <button
               className="cursor-pointer w-full flex justify-between items-center text-left"
@@ -58,6 +58,7 @@ export default function FAQ() {
     </div>
   );
 }
+
 
 
 
