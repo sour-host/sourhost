@@ -91,14 +91,9 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="https://mintservers.com/brand/icon.svg" 
-                className="h-9 w-9 animate-[alternating-animations_14s_0.4s_infinite_alternate]"
-                alt="MintServers icon"
-              />
-              <img 
-                src="https://mintservers.com/brand/logo-no-icon.svg" 
+                src="/sourhost.png" 
                 className="h-8 ml-2"
-                alt="MintServers Logo"
+                alt="SourHost Logo"
               />
             </div>
 
