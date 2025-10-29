@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="relative overflow-hidden z-10 hover:-translate-y-2 transform transition-all duration-300 bg-gray-800 text-black rounded-xl shadow-md"
+              className="relative overflow-hidden z-10 hover:-translate-y-2 transform transition-all duration-300 bg-white/10 text-black rounded-xl shadow-md"
             >
               <div className="p-4">
                 <div className="overflow-hidden absolute w-50 top-[-40px] opacity-10 rotate-340 right-[-65px]">
