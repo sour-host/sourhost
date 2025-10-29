@@ -85,113 +85,70 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-transparent relative top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
-          {/* Logo */}
-          <div className="relative z-60 flex-shrink-0">
-            <Link href="/" className="flex items-center" onClick={closeAllMenus}>
-                <img src="/sourhost.png" className="w-50 mb-2" alt="SOURHOST Logo" />
-            </Link>
-          </div>
+      <header className="fixed top-0 w-full z-50 bg-transparent transition-all duration-300 py-4">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center">
+            {/* Logo */}
+            <div className="flex items-center">
+              <img 
+                src="https://mintservers.com/brand/icon.svg" 
+                className="h-9 w-9 animate-[alternating-animations_14s_0.4s_infinite_alternate]"
+                alt="MintServers icon"
+              />
+              <img 
+                src="https://mintservers.com/brand/logo-no-icon.svg" 
+                className="h-8 ml-2"
+                alt="MintServers Logo"
+              />
+            </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <div key={link.name} className="relative" ref={setDropdownRef(link.name)}>
-                <Link
-                  href={link.href}
-                  className="flex items-center text-white transition-colors duration-200 font-semibold"
-                >
-                  {link.name}
-                </Link>
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center space-x-6">
+              <a href="/" className="text-white font-bold text-sm hover:text-[#00aeef] transform scale-x-[1.15] transition-colors">
+                HOME
+              </a>
+              
+              {/* Services Dropdown */}
+              <div className="relative group">
+                <button className="text-white font-bold text-sm hover:text-[#00aeef] transform scale-x-[1.15] transition-colors flex items-center">
+                  ALL SERVICES <i className="fa-solid fa-caret-down ml-1 text-[#00aeef] text-xs relative -top-0.5"></i>
+                </button>
+                <div className="absolute left-0 top-full mt-2 w-64 bg-[rgba(16,11,34,0.9)] backdrop-blur-lg rounded-3xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-200 pointer-events-none group-hover:pointer-events-auto">
+                  {/* Dropdown content */}
+                  <div className="p-4">
+                    <h6 className="text-white font-semibold text-xs uppercase tracking-wider mb-2">Game Hosting</h6>
+                    <a href="/" className="flex items-center text-[#bebebe] hover:text-white py-2 transition-colors">
+                      <img src="https://mintservers.com/assets/games/icons/mcjava.png" className="w-4 h-4 mr-2" alt="" />
+                      Minecraft Hosting
+                    </a>
+                  </div>
+                </div>
               </div>
-            ))}
-          </nav>
 
-          {/* Desktop Buttons */}
-          <div className="hidden md:flex relative z-60 items-center space-x-4">
-            <a href="https://portal.sour.host/auth/login">
-              <button className="cursor-pointer text-white transition-colors duration-200 font-semibold px-4 py-2 rounded-lg">
-                Login
-              </button>
-            </a>
-            <a href="/#plans">
-              <button className="cursor-pointer bg-gradient-to-r from-[#00b72f] to-[#00b72f] hover:from-[#00b72f]/70 to-[#00b72f]/70 text-white font-semibold px-4 py-2 rounded-lg transition-all duration-200 transform shadow-md hover:shadow-lg">
-                Order Now
-              </button>
-            </a>
-          </div>
+              <a href="/knowledgebase" className="text-white font-bold text-sm hover:text-[#00aeef] transform scale-x-[1.15] transition-colors">
+                KNOWLEDGEBASE
+              </a>
+              
+              <a href="/support" className="text-white font-bold text-sm hover:text-[#00aeef] transform scale-x-[1.15] transition-colors">
+                CONTACT US
+              </a>
+            </nav>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden relative z-60">
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="text-white transition-colors duration-200 p-2 rounded-lg"
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? (
-                <XIcon className="h-6 w-6" />
-              ) : (
-                <MenuIcon className="h-6 w-6" />
-              )}
+            {/* User Section */}
+            <div className="hidden lg:flex items-center space-x-3">
+              <button className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg font-bold transition-colors">
+                <i className="fa-solid fa-sliders mr-2"></i>
+                Dashboard
+              </button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button className="lg:hidden bg-black/60 text-[#00aeef] p-2 rounded">
+              <i className="fa-solid fa-bars"></i>
             </button>
           </div>
         </div>
-
-        {/* Mobile Navigation */}
-        <div 
-          ref={mobileMenuRef}
-          className={`md:hidden relative z-60 transition-all duration-300 ease-in-out ${
-            isMobileMenuOpen 
-              ? 'max-h-96 opacity-100' 
-              : 'max-h-0 opacity-0 overflow-hidden'
-          }`}
-        >
-          <nav className="flex flex-col space-y-2">
-            {navLinks.map((link) => (
-              <div key={link.name}>
-                <Link
-                    href={link.href}
-                    className="flex items-center text-gray-700 hover:text-[#00b72f] transition-colors duration-200 font-semibold py-3 px-2 rounded-lg hover:bg-gray-50"
-                    onClick={closeAllMenus}
-                >
-                    {link.name}
-                </Link>
-              </div>
-            ))}
-            
-            {/* Mobile Buttons */}
-            <div className="flex flex-col space-y-3 pt-4">
-              <a href="https://portal.sour.host/auth/login">
-                <button 
-                  className="w-full text-white hover:text-[#00b72f] transition-colors duration-200 font-semibold py-3 px-4 rounded-lg border border-gray-200 hover:border-green-200 text-center"
-                  onClick={closeAllMenus}
-                >
-                  Login
-                </button>
-              </a>
-              <a href="/#plans">
-                <button 
-                  className="w-full bg-gradient-to-r from-[#00b72f] to-[#00b72f] hover:from-[#00b72f]/70 to-[#00b72f]/70 text-white font-semibold py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-md text-center"
-                  onClick={closeAllMenus}
-                >
-                  Order Now
-                </button>
-              </a>
-            </div>
-          </nav>
-        </div>
-      </div>
-
-      {/* Overlay for mobile menu */}
-      {isMobileMenuOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
-          onClick={closeAllMenus}
-        />
-      )}
-    </header>
+      </header>
   );
 };
 
