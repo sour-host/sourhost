@@ -57,7 +57,7 @@ const ImageTabs = () => {
         </div>
       {/* Main container with radial gradient background and border */}
       <div 
-        className="border-4 border-gray-800 rounded-4xl p-6 bg-gray-800"
+        className="border-4 border-gray-800 rounded-4xl p-6 bg-white/10"
       >
         {/* Tabs navigation */}
         <div className="md:flex space-x-2 mb-6 mt">
