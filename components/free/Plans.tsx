@@ -350,19 +350,19 @@ export default function Hero() {
   // Define your plans (same as before)
   const plans = [
     {
-      id: 'unmetered-basic',
-      name: 'Unmetered Basic',
-      price: '$9.99',
-      ram: 'Unmetered DDR4',
+      id: 'free-basic',
+      name: 'Free Basic (Minecraft)',
+      price: '$0.00',
+      ram: '12GB DDR4',
       period: '/month',
       players: '10-100 Recommended Players',
       icon: '/basic.png',
       description: 'The best package for simple modded gameplay.',
       features: [
-        'Unmetered DDR4 RAM (fair-usage)',
+        '12GB DDR4 RAM (fair-usage)',
         '2 Shared Logical Cores',
         '1Tbps+ DDoS Protection',
-        '100GB NVMe SSD',
+        '50GB NVMe SSD',
         '24/7 Support',
         'Unlimited Player Slots',
         'Easy-to-Use Control Panel',
@@ -371,47 +371,42 @@ export default function Hero() {
       baseUrl: 'https://portal.sour.host/store/view/3'
     },
     {
-      id: 'unmetered-pro',
-      name: 'Unmetered Pro',
-      price: '$19.99',
-      ram: 'Unmetered DDR4',
+      id: 'free-vps',
+      name: 'Free Basic (VPS NAT)',
+      price: '$0.00',
+      ram: '8GB DDR4',
       period: '/month',
-      players: '100-250 Recommended Players',
-      icon: '/pro.png',
-      description: 'The best package for modded gameplay.',
+      icon: '/basic.png',
+      description: 'The best package for simple modded gameplay.',
       features: [
-        'Unmetered DDR4 RAM (fair-usage)',
-        'Unmetered CPU Cores (fair-usage)',
+        '8GB DDR4 RAM (fair-usage)',
+        '3 Shared Logical Cores',
         '1Tbps+ DDoS Protection',
-        '4 Server Backups',
-        '150GB NVMe SSD',
-        'Unlimited Player Slots',
-        'Priority 24/7 Support',
+        '120GB NVMe SSD',
+        '24/7 Support',
+        'Easy-to-Use Control Panel',
       ],
-      isPopular: true,
-      cta: 'Choose Basic',
-      baseUrl: 'https://portal.sour.host/store/view/7'
+      cta: 'Choose VPS',
+      baseUrl: 'https://portal.sour.host/store/view/3'
     },
-    {
-      id: 'unmetered-max',
-      name: 'Unmetered Max',
-      price: '$24.99',
-      ram: '10GB',
+     {
+      id: 'free-storage',
+      name: 'Free Basic (VPS STORAGE NAT)',
+      price: '$0.00',
+      ram: '4GB DDR4',
       period: '/month',
-      players: '100-175 Recommended Players',
-      icon: '/max.png',
-      description: 'Ideal for large networks and modpack servers.',
+      icon: '/basic.png',
+      description: 'The best package for simple modded gameplay.',
       features: [
-        'Unmetered DDR4 RAM (fair-usage)',
-        'Unmetered CPU Cores (fair-usage)',
+        '4GB DDR4 RAM (fair-usage)',
+        '1 Shared Logical Cores',
         '1Tbps+ DDoS Protection',
-        '6 Server Backups',
-        '250GB NVMe SSD',
-        'Unlimited Player Slots',
-        'Priority 24/7 Support',
+        '500GB NVMe SSD',
+        '24/7 Support',
+        'Easy-to-Use Control Panel',
       ],
-      cta: 'Choose Base',
-      baseUrl: 'https://portal.sour.host/store/view/8'
+      cta: 'Choose VPS',
+      baseUrl: 'https://portal.sour.host/store/view/3'
     },
   ];
 
@@ -443,7 +438,7 @@ export default function Hero() {
   return (
     <section id="plans" className="relative pt-20 lg:mt-0 lg:mx-0">
         <div className="text-center mb-8">
-          <h1 className="text-white text-4xl font-bold mb-2">Pick Your Minecraft Plan</h1>
+          <h1 className="text-white text-4xl font-bold mb-2">Pick Your Plan</h1>
           <p className="text-gray-300">Find a server plan that's just right for you</p>
         </div>
       

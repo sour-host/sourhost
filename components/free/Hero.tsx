@@ -234,7 +234,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
                 Select Server Location
               </h1>
               <h1 className="text-lg text-gray-400 mt-2">
-                For <span className="text-[#00b72f] font-semibold">{selectedPlanName}</span> • Powered by a Ryzen 9 9900X
+                For <span className="text-[#2c4fd6] font-semibold">{selectedPlanName}</span> • Powered by a Ryzen 9 9950X
               </h1>
             </div>
             <button
@@ -249,7 +249,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
         {/* Loading State */}
         {loading && (
           <div className="p-8 text-center">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#00b72f] mx-auto"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#2c4fd6] mx-auto"></div>
             <p className="text-gray-400 mt-4 text-lg">Testing server locations worldwide...</p>
           </div>
         )}
@@ -275,7 +275,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
                           <button
                             key={location.id}
                             onClick={() => onLocationSelect(location.id)}
-                            className="w-full text-left p-4 rounded-lg bg-[#070D14] hover:bg-[#00b72f]/20 border border-white/5 hover:border-[#00b72f]/30 transition-all duration-300 group"
+                            className="w-full text-left p-4 rounded-lg bg-[#070D14] hover:bg-[#2c4fd6]/20 border border-white/5 hover:border-[#2c4fd6]/30 transition-all duration-300 group"
                           >
                             <div className="flex items-center justify-between">
                               <div className="flex-1">
@@ -284,7 +284,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
                                     {getStatusIcon(location.id)}
                                   </span>
                                   <div className="text-left">
-                                    <h3 className="font-semibold text-white group-hover:text-[#00b72f] transition-colors">
+                                    <h3 className="font-semibold text-white group-hover:text-[#2c4fd6] transition-colors">
                                       {location.name}
                                     </h3>
                                     <p className="text-sm text-gray-400">
@@ -316,7 +316,7 @@ const LocationSelector = ({ isOpen, onClose, onLocationSelect, selectedPlanName 
           <div className="flex items-center justify-between">
             <button
               onClick={pingAllLocations}
-              className="flex items-center space-x-3 text-[#00b72f] hover:text-[#00b72f]/80 transition-colors px-4 py-2 rounded-lg hover:bg-[#00b72f]/10"
+              className="flex items-center space-x-3 text-[#2c4fd6] hover:text-[#2c4fd6]/80 transition-colors px-4 py-2 rounded-lg hover:bg-[#2c4fd6]/10"
             >
               <span className="font-medium">Refresh Ping Tests</span>
             </button>
@@ -347,71 +347,23 @@ export default function Hero() {
   const [isLocationOpen, setIsLocationOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState('');
   
-  // Define your plans (same as before)
+  // Define your plans
   const plans = [
     {
-      id: 'unmetered-basic',
-      name: 'Unmetered Basic',
-      price: '$9.99',
-      ram: 'Unmetered DDR4',
-      period: '/month',
-      players: '10-100 Recommended Players',
-      icon: '/basic.png',
-      description: 'The best package for simple modded gameplay.',
-      features: [
-        'Unmetered DDR4 RAM (fair-usage)',
-        '2 Shared Logical Cores',
-        '1Tbps+ DDoS Protection',
-        '100GB NVMe SSD',
-        '24/7 Support',
-        'Unlimited Player Slots',
-        'Easy-to-Use Control Panel',
-      ],
-      cta: 'Choose Basic',
-      baseUrl: 'https://portal.sour.host/store/view/3'
-    },
-    {
-      id: 'unmetered-pro',
-      name: 'Unmetered Pro',
-      price: '$19.99',
-      ram: 'Unmetered DDR4',
-      period: '/month',
-      players: '100-250 Recommended Players',
-      icon: '/pro.png',
-      description: 'The best package for modded gameplay.',
-      features: [
-        'Unmetered DDR4 RAM (fair-usage)',
-        'Unmetered CPU Cores (fair-usage)',
-        '1Tbps+ DDoS Protection',
-        '4 Server Backups',
-        '150GB NVMe SSD',
-        'Unlimited Player Slots',
-        'Priority 24/7 Support',
-      ],
-      isPopular: true,
-      cta: 'Choose Basic',
-      baseUrl: 'https://portal.sour.host/store/view/7'
-    },
-    {
-      id: 'unmetered-max',
-      name: 'Unmetered Max',
-      price: '$24.99',
+      id: 'slime',
+      name: 'Slime',
+      price: '$20.00',
       ram: '10GB',
       period: '/month',
-      players: '100-175 Recommended Players',
-      icon: '/max.png',
-      description: 'Ideal for large networks and modpack servers.',
+      icon: '/slime.png',
       features: [
-        'Unmetered DDR4 RAM (fair-usage)',
-        'Unmetered CPU Cores (fair-usage)',
-        '1Tbps+ DDoS Protection',
-        '6 Server Backups',
-        '250GB NVMe SSD',
-        'Unlimited Player Slots',
-        'Priority 24/7 Support',
+        '3 CPU Cores',
+        'Ryzen 9900X',
+        'NVMe SSD',
+        '24/7 Support'
       ],
       cta: 'Choose Base',
-      baseUrl: 'https://portal.sour.host/store/view/8'
+      baseUrl: 'https://billing.exphost.net/products/minecraft-basic-tier/base-basic/checkout' // Unique base URL for Basic tier
     },
   ];
 
@@ -435,76 +387,34 @@ export default function Hero() {
     window.open(redirectUrl, '_blank');
   };
 
-  const getSelectedPlanName = () => {
+  const getSelectedPlanName = (): string => {
     const plan = plans.find(p => p.id === selectedPlan);
     return plan ? plan.name : '';
   };
   
   return (
-    <section id="plans" className="relative pt-20 lg:mt-0 lg:mx-0">
-        <div className="text-center mb-8">
-          <h1 className="text-white text-4xl font-bold mb-2">Pick Your Minecraft Plan</h1>
-          <p className="text-gray-300">Find a server plan that's just right for you</p>
+    <section className="mt-8 lg:mt-0 lg:mx-0">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 py-40">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 w-full justify-between">
+          <div className="md:col-span-2 space-y-6 sm:space-y-8 text-center lg:text-left w-full max-w-4xl">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-extratight hero-heading">
+              THE LAST *FREE* MINECRAFT <br/>HOST YOU'LL EVER NEED!
+            </h1>
+            <p className="text-lg text-white font-semibold">With Sour Host, your server will be faster, smoother, and without limits.</p>
+            <a className="flex" href="https://trustpilot.com/review/sour.host">
+              <p className="font-bold text-lg text-white mt-1 mr-2">Rated 4.2</p>
+              <img src="/trustpilot.png" className="w-50" />
+              <p className="font-bold text-lg text-white mt-1 ml-2">On TrustPilot</p>
+            </a>
+            <Link href="#plans">
+            <button className="mt-6 cursor-pointer bg-gradient-to-r from-[#00b72f] to-[#00b72f] text-white rounded-lg px-10 py-2 hover:shadow-lg hover:shadow-[#2c4fd6]/20 hover:-translate-y-0.5 transition-all duration-300">
+              <div className="text-base sm:text-lg font-semibold">Get it Now</div>
+            </button>
+            </Link>
+          </div>
+          <img src="/mcimage.png" />
         </div>
-      
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4 sm:px-6 lg:px-8">
-          {plans.map((plan) => (
-            <motion.div key={plan.id} className={`bg-white/10 backdrop-blur-xl rounded-xl p-6 hover:-translate-y-2 transform transition-all duration-300 group`}
-        >
-            <div className="flex items-center gap-4 mb-6">
-              <img 
-                src={plan.icon} 
-                alt={plan.name} 
-                className="w-16 h-16 group-hover:scale-110 transition-transform duration-300" 
-              />
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-1 transition-colors duration-300">
-                  {plan.name}
-                </h3>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-2 text-gray-400 mb-4">
-              <span className="text-md">{plan.players}</span>
-            </div>
-
-            <p className="text-gray-400 text-sm mb-6">
-              {plan.description}
-            </p>
-
-            <div className="space-y-4 mb-6">
-              {plan.features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-3 text-sm text-gray-400">
-                  <div className="w-2 h-2 bg-[#00b72f] rounded-full"></div>
-                  {feature}
-                </div>
-              ))}
-            </div>
-
-            <div className="flex items-center justify-between mb-4">
-              <div>
-                <div className="text-sm text-gray-400">Starting at</div>
-                <div className="text-[#00b72f] text-2xl font-bold">
-                  {plan.price}
-                  <span className="text-gray-400 text-sm">/mo</span>
-                </div>
-              </div>
-              {/* <a href={plan.baseUrl}> */}
-              <button
-                onClick={() => handlePlanSelection(plan.id)} 
-                className="cursor-pointer bg-[#00b72f]/30 text-[#00b72f] px-6 py-3 rounded-lg font-medium hover:bg-[#00b72f] hover:text-white transition-all duration-300 transform hover:scale-105"
-              >
-                Pick Location
-              </button>
-              {/* </a> */}
-            </div>
-          </motion.div>
-        ))}
       </div>
-
-      <center><p className="text-white text-sm mt-6">Abuse of our unmetered policy (excessive use of resources that negatively impacts our network or services)<br/> may result in a temporary suspension of your service.</p></center>
-
-      {/* OVH Location Selector */}
       <LocationSelector
         isOpen={isLocationOpen}
         onClose={() => setIsLocationOpen(false)}
