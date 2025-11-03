@@ -37,6 +37,12 @@ export default function Dashboard() {
   return (
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
+      <div className="p-6 rounded-lg shadow">
+        <h2 className="text-xl font-semibold mb-2">API Response:</h2>
+        <pre className="p-4 rounded overflow-auto">
+          {JSON.stringify(data, null, 2)}
+        </pre>
+      </div>
     </div>
   );
 }
