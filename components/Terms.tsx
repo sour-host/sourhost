@@ -122,8 +122,8 @@ export default function TermsPage() {
                 <h2 className="text-2xl font-bold text-gray-400 mb-4">11. Contact Us</h2>
                 <p>
                   If you have any questions about these terms, please contact us at{' '}
-                  <Link href="mailto:legal@sour.host" className="text-[#00b72f] hover:underline">
-                    legal@sour.host
+                  <Link href="mailto:sour@aeplo.com" className="text-[#00b72f] hover:underline">
+                    sour@aeplo.com (SOON)
                   </Link>.
                 </p>
               </section>

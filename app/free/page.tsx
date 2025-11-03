@@ -19,7 +19,6 @@ export default function Home() {
       <Plans />
       <ChooseUs />
       <PanelTabs />
-      {/* <Modpacks /> */}
       <Faq />
     </>
   );

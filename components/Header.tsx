@@ -25,10 +25,12 @@ const Header = () => {
 
   const navLinks = [
     { name: 'Home', href: '/' },
+    { name: "Free", href: '/free' },
     { name: 'Plans', href: '/#plans' },
     { name: 'Support', href: 'https://portal.sour.host/tickets/create' },
     { name: 'FAQ', href: '/#faq' },
     { name: 'SourShield', href: '/shield' },
+    { name: 'Legal', href: '/legal' },
   ];
 
   // Close dropdowns when clicking outside
@@ -103,6 +105,10 @@ const Header = () => {
                 HOME
               </a>
 
+              <a href="/free" className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors">
+                FREE HOSTING
+              </a>
+
               <a href="/#plans" className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors">
                 MINECRAFT
               </a>
@@ -118,7 +124,7 @@ const Header = () => {
 
             {/* User Section */}
             <div className="hidden lg:flex items-center space-x-3">
-              <a href="https://portal.sour.host">
+              <a href="/dashboard">
               <button className="bg-white/10 hover:bg-white/20 text-white px-6 py-3 rounded-lg font-bold transition-colors">
                 Dashboard
               </button>
