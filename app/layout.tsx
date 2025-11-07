@@ -9,8 +9,9 @@ import { Analytics } from "@vercel/analytics/next"
 const oxanium = Oxanium({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'SOUR.HOST - You Hit an Error',
-  description: 'SOUR.HOST makes sure every one of our customers get what they want - High-Performance Minecraft Servers at an affordable price.',
+  // TODO: Change the - You Hit An Error.
+  title: 'AEPLO.COM - You Hit an Error',
+  description: 'AEPLO.COM makes sure every one of our customers get what they want - High-Performance Minecraft Servers at an affordable price.',
 };
 
 export default function RootLayout({

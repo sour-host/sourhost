@@ -1,4 +1,3 @@
-// components/WhyChooseUs.tsx
 import { 
   WrenchScrewdriverIcon,
   ArchiveBoxArrowDownIcon,

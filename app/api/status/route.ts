@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  // This is example data - replace with real data from your monitoring system
   const services = [
     {
       id: '1',
