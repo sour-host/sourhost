@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 // Using a GET request.
 export async function GET() {
   return NextResponse.json({
-    message: 'Hello from Sour.Host!',
+    message: 'Hello from AEPLO.COM!',
     success: true,
     data: {
       stats: {
