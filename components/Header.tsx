@@ -94,7 +94,7 @@ const Header = () => {
             <div className="flex items-center">
               <img 
                 src="/aeplo.png" 
-                className="h-8 ml-2"
+                className="h-25 ml-2"
                 alt="Aeplo Logo"
               />
             </div>

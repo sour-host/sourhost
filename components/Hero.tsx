@@ -347,7 +347,6 @@ export default function Hero() {
   const [isLocationOpen, setIsLocationOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState('');
   
-  // Define your plans
   const plans = [
     {
       id: 'slime',
@@ -400,8 +399,8 @@ export default function Hero() {
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-extratight hero-heading">
               THE LAST MINECRAFT <br/>HOST YOU'LL EVER NEED!
             </h1>
-            <p className="text-lg text-white font-semibold">With Sour Host, your server will be faster, smoother, and unmetered.</p>
-            <a className="flex" href="https://trustpilot.com/review/sour.host">
+            <p className="text-lg text-white font-semibold">With Aeplo Host, your server will be faster, smoother, and unmetered.</p>
+            <a className="flex" href="https://trustpilot.com/review/aeplo.com">
               <p className="font-bold text-lg text-white mt-1 mr-2">Rated 4.2</p>
               <img src="/trustpilot.png" className="w-50" />
               <p className="font-bold text-lg text-white mt-1 ml-2">On TrustPilot</p>
