@@ -26,20 +26,20 @@ export default function TermsPage() {
               <section id="intro">
                 <h2 className="text-2xl font-bold text-gray-400 mb-4">1. Introduction</h2>
                 <p className="mb-4">
-                  The following terms and conditions of service regulates and define the relationship between Sour Host (owned and operated by Spheres Hosting, LLC) hereby referred to as the ("Hosting")/("Company") and/or ("We") and Clients, customers and or users such as guests. By using our services, you automatically agree to all conditions mentioned within the following agreement, ensure you read and understand this carefully.
+                  The following terms and conditions of service regulates and define the relationship between Aeplo Host (owned and operated by Spheres Hosting, LLC) hereby referred to as the ("Hosting")/("Company") and/or ("We") and Clients, customers and or users such as guests. By using our services, you automatically agree to all conditions mentioned within the following agreement, ensure you read and understand this carefully.
                 </p>
               </section>
 
               <section id="updates" className="pt-22">
                 <h2 className="text-2xl font-bold text-gray-400 mb-4">2. Updates</h2>
                 <p className="mb-4">
-                  We may update these Terms of Use from time to time with no prior notice. Any such changes will not apply to any dispute between you and us arising prior to the date on which we posted the revised Terms of Service incorporating such changes. You agree that it is your responsibility to regularly check Sour Host.com for any updated Terms of Service. In addition, by continuing to use or access any of the Sour Host Sites or otherwise engaging with Sour Host after we post any changes, you accept the updated Terms of Use. The “Last Updated” legend above indicates when these Terms of Use were last changed.
+                  We may update these Terms of Use from time to time with no prior notice. Any such changes will not apply to any dispute between you and us arising prior to the date on which we posted the revised Terms of Service incorporating such changes. You agree that it is your responsibility to regularly check Aeplo.com for any updated Terms of Service. In addition, by continuing to use or access any of the Aeplo Host Sites or otherwise engaging with Aeplo Host after we post any changes, you accept the updated Terms of Use. The “Last Updated” legend above indicates when these Terms of Use were last changed.
                 </p>
               </section>
 
               <section id="user-representation" className="pt-22">
                 <h2 className="text-2xl font-bold text-gray-400 mb-4">3. User Representation</h2>
-                <p className="mb-2">Sour Host will not allow the following users and viewers to use the platform in the following events:</p>
+                <p className="mb-2">Aeplo Host will not allow the following users and viewers to use the platform in the following events:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>You are under the age of 13 (without Parent or Guardian Consent).</li>
                   <li>a person barred from receiving and rendering services under the laws of the United Stated of America or another applicable jurisdiction By using our services you agree that all registration information you submit will be true, accurate, current, and complete and that we may, at our absolute discretion, refuse to register any person/entity as a "Client".</li>
@@ -86,21 +86,21 @@ export default function TermsPage() {
               <section id="termination" className="pt-22">
                 <h2 className="text-2xl font-bold text-gray-400 mb-4">6. Term & Termination</h2>
                 <p className="mb-4 text-white">
-                  These Terms of Use shall remain in full force and effect while you use Sour Host. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS OF USE, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SITE (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE TERMS OF USE OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SITE OR DELETE YOUR ACCOUNT AND ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION. If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.
+                  These Terms of Use shall remain in full force and effect while you use Aeplo Host. WITHOUT LIMITING ANY OTHER PROVISION OF THESE TERMS OF USE, WE RESERVE THE RIGHT TO, IN OUR SOLE DISCRETION AND WITHOUT NOTICE OR LIABILITY, DENY ACCESS TO AND USE OF THE SITE (INCLUDING BLOCKING CERTAIN IP ADDRESSES), TO ANY PERSON FOR ANY REASON OR FOR NO REASON, INCLUDING WITHOUT LIMITATION FOR BREACH OF ANY REPRESENTATION, WARRANTY, OR COVENANT CONTAINED IN THESE TERMS OF USE OR OF ANY APPLICABLE LAW OR REGULATION. WE MAY TERMINATE YOUR USE OR PARTICIPATION IN THE SITE OR DELETE YOUR ACCOUNT AND ANY CONTENT OR INFORMATION THAT YOU POSTED AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION. If we terminate or suspend your account for any reason, you are prohibited from registering and creating a new account under your name, a fake or borrowed name, or the name of any third party, even if you may be acting on behalf of the third party. In addition to terminating or suspending your account, we reserve the right to take appropriate legal action, including without limitation pursuing civil, criminal, and injunctive redress.
                 </p>
               </section>
 
               <section id="liability" className="pt-22">
                 <h2 className="text-2xl font-bold text-gray-400 mb-4">7. Limitation of Liability</h2>
                 <p className="mb-4">
-                  Sour Host under no circumstances whatsoever is responsible for data loss, disruption of information (including that of unauthorized access to our services), or any other loss of data. Sour Host shall not be held liable for disruption, delay, or disconnection of services for any period of time.
+                  Aeplo Host under no circumstances whatsoever is responsible for data loss, disruption of information (including that of unauthorized access to our services), or any other loss of data. Aeplo Host shall not be held liable for disruption, delay, or disconnection of services for any period of time.
                 </p>
               </section>
 
               <section id="fraud" className="pt-22">
                 <h2 className="text-2xl font-bold text-gray-400 mb-4">8. Fraud</h2>
                 <p className="mb-4">
-                  Attempt of any type of fraud at Sour Host will lead to your services and or your account being subject to termination.
+                  Attempt of any type of fraud at Aeplo Host will lead to your services and or your account being subject to termination.
                 </p>
               </section>
 

@@ -44,20 +44,20 @@ export default function TermsPage() {
 
               <section id="abuse" className="pt-22">
                 <h2 className="text-2xl font-bold text-gray-400 mb-4">4. Uptime</h2>
-                <p className="mb-2">We aim to provide 99.90% uptime across all our services. However certain situations may cause servers to go offline such as scheduled maintenance. These downtimes occur from time to time, and the customer should take into account that these events are unavoidable. The status of our servers can be found here: https://status.sour.host</p>
+                <p className="mb-2">We aim to provide 99.90% uptime across all our services. However certain situations may cause servers to go offline such as scheduled maintenance. These downtimes occur from time to time, and the customer should take into account that these events are unavoidable. The status of our servers can be found here: https://status.aeplo.com</p>
               </section>
 
               <section id="user-registration" className="pt-22">
                 <h2 className="text-2xl font-bold text-gray-400 mb-4">5. DDoS Protection</h2>
-                <p className="mb-4">This service includes up to 4Tbps of mitigation capacity and protection against most common attacks. Sour Host, LLC will not be liable for any attacks we are unable to prevent to the extent that we have taken reasonable steps to prevent.</p>
+                <p className="mb-4">This service includes up to 4Tbps of mitigation capacity and protection against most common attacks. Aeplo Host, LLC will not be liable for any attacks we are unable to prevent to the extent that we have taken reasonable steps to prevent.</p>
               </section>
 
               <section className="pt-22" id="contact">
                 <h2 className="text-2xl font-bold text-gray-400 mb-4">6. Contact Us</h2>
                 <p>
                   If you have any questions about these terms, please contact us at{' '}
-                  <Link href="mailto:legal@sour.host" className="text-[#00b72f] hover:underline">
-                    legal@sour.host
+                  <Link href="mailto:sourlegal@aeplo.com" className="text-[#00b72f] hover:underline">
+                    sourlegal@aeplo.com
                   </Link>.
                 </p>
               </section>

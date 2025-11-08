@@ -26,7 +26,7 @@ export default function TermsPage() {
               <section id="intro">
                 <h2 className="text-2xl font-bold text-gray-400 mb-4">1. Introduction</h2>
                 <p className="mb-4">
-                 Spheres Hosting, LLC operates the https://sour.host website, which provides the "Service". This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service or the Sour Host.com website. If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy. The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at https://Sour Host.com, unless otherwise defined in this Privacy Policy.
+                 Spheres Hosting, LLC operates the https://aeplo.com website, which provides the "Service". This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service or the aeplo.com website. If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy. The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at https://aeplo.com, unless otherwise defined in this Privacy Policy.
                 </p>
               </section>
 
@@ -77,8 +77,8 @@ Our website uses these "cookies" to collection information and to improve our Se
                 <h2 className="text-2xl font-bold text-gray-400 mb-4">11. Contact Us</h2>
                 <p>
                   If you have any questions about these terms, please contact us at{' '}
-                  <Link href="mailto:legal@sour.host" className="text-[#00b72f] hover:underline">
-                    legal@sour.host
+                  <Link href="mailto:sourlegal@aeplo.com" className="text-[#00b72f] hover:underline">
+                    sourlegal@aeplo.com
                   </Link>.
                 </p>
               </section>

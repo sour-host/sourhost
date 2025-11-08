@@ -347,7 +347,6 @@ export default function Hero() {
   const [isLocationOpen, setIsLocationOpen] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState('');
   
-  // Define your plans
   const plans = [
     {
       id: 'slime',
