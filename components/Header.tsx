@@ -113,9 +113,10 @@ const Header = () => {
                 MINECRAFT
               </a>
 
-              <a href="/shield" className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors">
-                SOURSHIELD
+              <a href="/infrastructure" className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors">
+                INFRASTRUCTURE
               </a>
+
               
               <a href="https://discord.gg/sourhost" className="text-white font-bold text-sm hover:text-[#00b72f] transform scale-x-[1.15] transition-colors">
                 CONTACT US
