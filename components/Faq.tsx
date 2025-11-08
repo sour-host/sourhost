@@ -12,7 +12,7 @@ const faqData = [
     answer: "Every server comes default with a shared IP and port, but you can purchase a dedicated IP at a cost of $2.50/mo. After purchase, open a support ticket, and we'll allocate it to your server."
   },
   {
-    question: "Can transfer my world to Sour Host?",
+    question: "Can transfer my world to Aeplo Host?",
     answer: "Yes! You can easily transfer your server with our server importer feature. Enjoy more power but keep your gameplay and data!"
   },
 ];

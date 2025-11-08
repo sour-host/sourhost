@@ -9,8 +9,7 @@ import { Analytics } from "@vercel/analytics/next"
 const oxanium = Oxanium({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  // TODO: Change the - You Hit An Error.
-  title: 'AEPLO.COM - You Hit an Error',
+  title: 'AEPLO.COM - Your Ultimate Minecraft Hosting Solution',
   description: 'AEPLO.COM makes sure every one of our customers get what they want - High-Performance Minecraft Servers at an affordable price.',
 };
 

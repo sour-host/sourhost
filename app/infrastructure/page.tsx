@@ -125,7 +125,7 @@ export default function Infrastructure() {
           <h2 className="text-xl font-semibold mb-4 text-white">Data Center Stats</h2>
           <div className="grid grid-cols-2 gap-4">
             <div className="text-center p-4 bg-zinc-800/50 rounded border border-zinc-700">
-              <p className="text-3xl font-bold text-blue-400">2</p>
+              <p className="text-3xl font-bold text-blue-400">1</p>
               <p className="text-zinc-400">Locations</p>
             </div>
             <div className="text-center p-4 bg-zinc-800/50 rounded border border-zinc-700">
@@ -416,12 +416,12 @@ export default function Infrastructure() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="p-4 bg-gradient-to-br from-zinc-900/30 to-zinc-800/30 rounded-lg border border-zinc-800 hover:border-zinc-700 transition-all duration-300">
               <h4 className="text-emerald-400 font-medium mb-2">Power Usage Effectiveness</h4>
-              <p className="text-3xl font-bold text-white mb-2">1.2 PUE</p>
+              <p className="text-3xl font-bold text-white mb-2">1.1 PUE</p>
               <p className="text-zinc-400">Industry-leading efficiency rating</p>
             </div>
             <div className="p-4 bg-gradient-to-br from-zinc-900/30 to-zinc-800/30 rounded-lg border border-zinc-800 hover:border-zinc-700 transition-all duration-300">
               <h4 className="text-emerald-400 font-medium mb-2">Renewable Energy</h4>
-              <p className="text-3xl font-bold text-white mb-2">100%</p>
+              <p className="text-3xl font-bold text-white mb-2">85%</p>
               <p className="text-zinc-400">Powered by renewable sources</p>
             </div>
             <div className="p-4 bg-gradient-to-br from-zinc-900/30 to-zinc-800/30 rounded-lg border border-zinc-800 hover:border-zinc-700 transition-all duration-300">

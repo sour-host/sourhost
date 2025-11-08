@@ -35,8 +35,8 @@ const HostingComparison = () => {
 
   const hostingProviders: HostingProvider[] = [
     {
-      name: 'Sour Host',
-      logo: '/sour.png',
+      name: 'Aeplo Host',
+      logo: '/aeplo.png',
       color: 'from-gray-900 to-gray-900',
       textColor: 'text-[#00b72f]',
       borderColor: 'border-[#00b72f]',

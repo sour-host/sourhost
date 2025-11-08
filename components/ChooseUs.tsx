@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
     <section id="features" className="relative z-10 pb-16 sm:pb-24 lg:pb-24 pt-22 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold mb-4">Why Sour Host?</h1>
+          <h1 className="text-4xl font-bold mb-4">Why Aeplo Host?</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             What features make us easier and just better than the competition.
           </p>
