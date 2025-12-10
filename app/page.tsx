@@ -7,9 +7,9 @@ import Faq from '@/components/Faq';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'ALLEXANDERBM - The right way to host your server',
-  description: 'ALLEXANDERBM makes sure every one of our customers get what they want - High-Performance, Unmetered Servers at an affordable price.',
-  keywords: 'ALLEXANDERBM, ALLEXANDERBM, ALLEXANDERBM, hosting, server hosting, best server hosting, free server hosting, cheap hosting, lag-free hosting, dedicated server hosting, hosting, host',
+  title: 'AEPLO - The right way to host your server',
+  description: 'AEPLO makes sure every one of our customers get what they want - High-Performance, Unmetered Servers at an affordable price.',
+  keywords: 'AEPLO, AEPLO, AEPLO, hosting, server hosting, best server hosting, free server hosting, cheap hosting, lag-free hosting, dedicated server hosting, hosting, host',
 };
 
 export default function Home() {

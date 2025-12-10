@@ -12,7 +12,7 @@ const faqData = [
     answer: "Yes! The services you see here are 100% free to use."
   },
   {
-    question: "Can transfer my world to ALLEXANDERBM?",
+    question: "Can transfer my world to ...?",
     answer: "Yes! You can easily transfer your server with our server importer feature. Enjoy more power but keep your gameplay and data!"
   },
 ];

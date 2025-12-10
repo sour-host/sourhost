@@ -175,7 +175,7 @@ export default function DataCenter() {
 			{/* Hero Section */}
 			<div className="mb-12 text-center">
 				<h1 className="text-4xl font-bold text-white mb-4">
-					ALLEXANDERBM Data Center
+					AEPLO Data Center
 				</h1>
 				<p className="text-xl text-zinc-400 max-w-2xl mx-auto">
 					Our upcoming state-of-the-art facility designed for maximum reliability,

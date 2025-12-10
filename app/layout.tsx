@@ -9,8 +9,8 @@ import { Analytics } from "@vercel/analytics/next"
 const oxanium = Oxanium({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ALLEXANDERBM - Your Ultimate Solution',
-  description: 'ALLEXANDERBM makes sure every one of our customers get what they want - High-Performance Servers at an affordable price.',
+  title: 'AEPLO - Your Ultimate Solution',
+  description: 'AEPLO makes sure every one of our customers get what they want - High-Performance Servers at an affordable price.',
 };
 
 export default function RootLayout({
