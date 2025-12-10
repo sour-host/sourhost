@@ -27,8 +27,7 @@ export default function RootLayout({
           <Analytics />
         </main>
         <Footer />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7185619060256226"
-     crossorigin="anonymous"></script>
+  
       </body>
     </html>
   );
